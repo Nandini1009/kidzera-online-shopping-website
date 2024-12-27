@@ -5507,7 +5507,7 @@ table {
     font-weight: bolder;
 }
 video {
-    width: 17.7rem;
+    width: 15.7rem;
 }
 .shop-by-card {
     margin: 0 59px;
@@ -5551,23 +5551,23 @@ video {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);
 }
 .winter-sale img {
-    width: 33%;
+    width: 100%;
 }
 .winter-sale-bann {
-    width: 99%;
+    width: 100%;
 }
 .footwear {
-    width: 13.7%;
+    width: 13.9%;
 }
 .footwear:hover {
   /*transform: scale(1.1);*/
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);
 }
 .main-game img {
-    width: 48.5%;
+    width: 49.6%;
 }
 .game {
-    width: 15.9%;
+    width: 16.3%;
 }
 .game:hover {
   /*transform: scale(1.1);*/
