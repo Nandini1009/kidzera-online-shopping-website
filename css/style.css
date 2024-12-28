@@ -5102,10 +5102,12 @@ hr {
 }
 .total-ratings {
     color: #FFC107;
-    display: inline-flex;
+    display: flex;
     font-size: 22px;
     align-items: center;
-    /*padding: 45px;*/
+    /* padding: 45px; */
+    float: right;
+    padding-top: 40px;
 }
 .total-ratings h2 {
     margin-right: 8px;
@@ -5142,7 +5144,11 @@ hr {
     font-size: 10px;
 }
 .give-rating {
-    padding: 84px;
+    /*padding: 84px;*/
+   /* justify-self: center;
+    display: grid;*/
+    padding-top: 40px;
+    float: left;
 }
 .give-review {
     font-size: 18px;
@@ -5486,32 +5492,54 @@ table {
   padding: 20px;
 }
 .about-video {
-    width: 33rem;
-    margin-top: 100px;
+    width: -webkit-fill-available;
+    /*margin-top: 100px;*/
+    padding: 4px;
+}
+.container {
+    /*max-width: 1245px !important;*/
+    max-width: 1300px !important;
+}
+
+.title {
+    color: #232323;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: underline;
 }
 .category-imgs {
   width: 37vh;
   background: none;
 }
 .category-img {
-  width: 37vh;
+  width: 100%;
   background: none;
 }
 .category-img:hover {
   transform: scale(1.1);
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 50%;
+  /*box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);*/
+  background: transparent;
+}
+.wear-card {
+    position: relative;
+    width: 25rem !important;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
 }
 .category-text {
     margin: 19px 9vh;
     font-weight: bolder;
 }
 .video {
-    width: 17.7rem;
+    width: 18.3rem;
 }
-.shop-by-card {
-    margin: 0 59px;
-}
+
 .btn-category {
     padding: 14px 30px;
     width: -webkit-fill-available;
@@ -5572,4 +5600,26 @@ table {
 .game:hover {
   /*transform: scale(1.1);*/
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.add-to-cart {
+    float: left;
+    border: 2px solid #fdb03d;
+    color: #fff;
+    background: #fdb03d;
+    font-weight: 600;
+    padding: 2px 7.4px;
+    text-transform: uppercase;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 3px;
+    width: 105px;
+    height: 26px;
+    box-sizing: border-box;
+    user-select: none;
+    font-size: smaller;
+    margin: 6px;
+}
+.add-to-cart:hover {
+    color: #fff;
+    background: #292560;
+    border: 2px solid #292560;
 }
