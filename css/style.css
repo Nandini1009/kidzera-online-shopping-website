@@ -5523,12 +5523,7 @@ table {
   /*box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);*/
   background: transparent;
 }
-@media(max-width: 576px) {
-    .category-img {
-  width: 200%;
-  background: none;
-}
-}
+
 .wear-card {
     position: relative;
     width: 25rem !important;
@@ -5601,7 +5596,7 @@ table {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);
 }
 .main-game img {
-    width: 49.4%;
+    width: 49.3%;
 }
 .game {
     width: 16.3%;
