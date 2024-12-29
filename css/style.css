@@ -5654,14 +5654,14 @@ table {
 /* Three column layout */
 .side {
   float: left;
-  width: 25%;
+  width: 20%;
   margin-top:10px;
 }
 
 .middle {
   margin-top:21px;
   float: left;
-  width: 35%;
+  width: 41%;
 }
 
 /* Place text to the right */
@@ -5686,14 +5686,19 @@ table {
 .review-img {
     width: 59px;
     margin: 6px;
-    height: max-content;
+    /*height: max-content;*/
+    height: -webkit-fill-available;
 }
 .rating-highlight {
     background: #27A63F;
     color: #fff;
     width: fit-content;
-    padding: 4px;
-    font-size: 12px;
+    /*padding: 4px;
+    font-size: 12px;*/
+}
+.rating-highlight span {
+    padding: 5px;
+    font-size: 11px;
 }
 .rating-heading {
     display: inline-flex;
