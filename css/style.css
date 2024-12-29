@@ -5607,7 +5607,8 @@ table {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);
 }
 .add-to-cart {
-    float: left;
+    float: left !important;
+    margin-left: -12px !important;
     border: 2px solid #fdb03d;
     color: #fff;
     background: #fdb03d;
@@ -5643,6 +5644,9 @@ table {
     background: #fbd03d;
     border: 2px solid #fbd03d;
 }
+.rate-us:focus {
+    outline: none;
+}
 .checked {
   color: orange;
 }
@@ -5650,14 +5654,14 @@ table {
 /* Three column layout */
 .side {
   float: left;
-  width: 13%;
+  width: 25%;
   margin-top:10px;
 }
 
 .middle {
   margin-top:21px;
   float: left;
-  width: 70%;
+  width: 35%;
 }
 
 /* Place text to the right */
@@ -5682,11 +5686,14 @@ table {
 .review-img {
     width: 59px;
     margin: 6px;
+    height: max-content;
 }
 .rating-highlight {
     background: #27A63F;
     color: #fff;
     width: fit-content;
+    padding: 4px;
+    font-size: 12px;
 }
 .rating-heading {
     display: inline-flex;
@@ -5699,3 +5706,48 @@ table {
     border: 1px solid #e4e1e1;
     padding: 18px;
 }
+#review-more {display: none;}
+.all-reviews {
+    overflow-y: scroll;
+    height: 100vh;
+}
+.all-reviews::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+.all-reviews::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+ 
+/* Handle */
+.all-reviews::-webkit-scrollbar-thumb {
+  background: #c0c0c0; 
+}
+
+/* Handle on hover */
+.all-reviews::-webkit-scrollbar-thumb:hover {
+  background: #c0c0c0; 
+}
+#reviewBtn {
+    color: #2979FF;
+    background: none;
+    border: none;
+    font-weight: 600;
+    text-decoration: underline;
+}
+#reviewBtn:focus {
+    outline: none;
+    
+}
+
+
+
+
+
+
+
+
+
+

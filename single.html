@@ -73,6 +73,117 @@ if(typeof _bsa !== 'undefined' && _bsa) {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
+#askmelater p {
+    /*color: #007BFF;*/
+    color: #292560;
+    text-align: center;
+}
+.rating {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.rating h6 {
+  font-size: 20px;
+  color: #000;
+}
+.rating h2 {
+  color: #292560 !important;
+  font-weight: 600;
+}
+
+.stars {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.star {
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.one {
+    color: rgb(255, 0, 0);
+}
+
+.two {
+    color: rgb(255, 106, 0);
+}
+
+.three {
+    color: rgb(251, 255, 120);
+}
+
+.four {
+    color: rgb(255, 255, 0);
+}
+
+.five {
+    color: rgb(24, 159, 14);
+}
+
+textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+textarea:focus {
+    outline: none;
+    border: 1px solid #fbd03d !important;
+}
+
+.review-btn {
+    background-color: #fdb03d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.review-btn:hover {
+    background-color: #292560;
+}
+
+.reviews {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.review {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.review p {
+    margin: 0;
+}
+
+.more-img {
+    filter: brightness(50%);
+    position: relative;
+    color: #fff;
+}
+.more-img:hover {
+    filter: brightness(30%);
+    position: relative;
+    color: #fff;
+}
+
+.centered {
+ /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+  position: relative;
+    top: -36%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+}
 
 #w3lDemoBar.w3l-demo-bar {
   top: 0;
@@ -1479,11 +1590,49 @@ RIGHT SIDEBAR TOGGLE SECTION
 				</div>
 			</div>
       <hr><br>
+
+      <div class="modal fade" id="rate-product" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" ></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="text-align: -webkit-center;">
+          <div class="rating">
+            <h2>RATE US</h2><br>
+            <h6><b>Tell others what you think about this product</b></h6>
+      <span id="rating">0</span>/5
+    </div>
+    <div class="stars" id="stars">
+      <span class="star" data-value="1">★</span>
+      <span class="star" data-value="2">★</span>
+      <span class="star" data-value="3">★</span>
+      <span class="star" data-value="4">★</span>
+      <span class="star" data-value="5">★</span>
+    </div>
+    <p>Share your review:</p>
+    <textarea id="review"
+        placeholder="Write your review here">
+    </textarea>
+    <button id="submit" class="review-btn">Submit</button>
+    <div class="reviews" id="askmelater">
+      <a href="#"><p><b>ASK ME LATER</b></p></a>
+      <a href="#"><p>NEVER ASK ME AGAIN</p></a>
+    </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
       <div class="row">
         <div class="col">
         <h3>
               <b>Ratings & Reviews</b>
-              <button type="submit" class="rate-us">RATE PRODUCT</button>
+              <button type="submit" class="rate-us" data-toggle="modal" data-target="#rate-product">RATE PRODUCT</button>
             </h3><br><br>
             <div class="row">
               <div class="col-4">
@@ -1555,18 +1704,63 @@ RIGHT SIDEBAR TOGGLE SECTION
       </div>
     </div>
     <br><br>
-    <div class="container">
+    <div class="container all-reviews">
       <div class="review-card">
       <div class="row">
         
         <img src="imgs/foot1.jpeg" class="review-img">
         <img src="imgs/foot1.1.jpg" class="review-img">
         <img src="imgs/foot1.2.jpg" class="review-img">
-      </div></div>
+          <a data-toggle="modal" data-target="#review-images"><img src="imgs/foot1.2.jpg" class="review-img more-img">
+            <div class="centered">+ 12</div></a>
+        </div>
+      </div>
+      <div class="modal fade" id="review-images" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center">User Images</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        <div class="row">
+          <img src="imgs/foot1.jpeg" class="review-img">
+        <img src="imgs/foot1.1.jpg" class="review-img">
+        <img src="imgs/foot1.2.jpg" class="review-img">
+        <img src="imgs/foot1.jpeg" class="review-img">
+        <img src="imgs/foot1.1.jpg" class="review-img">
+        <img src="imgs/foot1.2.jpg" class="review-img">
+        <img src="imgs/foot1.jpeg" class="review-img">
+        <img src="imgs/foot1.1.jpg" class="review-img">
+        <img src="imgs/foot1.2.jpg" class="review-img">
+        <img src="imgs/foot1.jpeg" class="review-img">
+        <img src="imgs/foot1.1.jpg" class="review-img">
+        <img src="imgs/foot1.2.jpg" class="review-img">
+        <img src="imgs/foot1.jpeg" class="review-img">
+        <img src="imgs/foot1.1.jpg" class="review-img">
+        <img src="imgs/foot1.2.jpg" class="review-img">
+        <img src="imgs/foot1.jpeg" class="review-img">
+        <img src="imgs/foot1.1.jpg" class="review-img">
+        <img src="imgs/foot1.2.jpg" class="review-img">
+        <img src="imgs/foot1.jpeg" class="review-img">
+        <img src="imgs/foot1.1.jpg" class="review-img">
+        <img src="imgs/foot1.2.jpg" class="review-img">
+        <img src="imgs/foot1.jpeg" class="review-img">
+        <img src="imgs/foot1.1.jpg" class="review-img">
+        <img src="imgs/foot1.2.jpg" class="review-img">
+        <img src="imgs/foot1.jpeg" class="review-img">
+        <img src="imgs/foot1.1.jpg" class="review-img">
+        </div>          
+        </div>
+      </div>
+    </div>
+  </div>
       <div class="review-card">
         <div class="rating-heading">
           <div class="rating-highlight">
-            <span>4<i class="fas fa-star"></i></span>
+            <span>4&nbsp;<i class="fas fa-star"></i></span>
           </div>
             <h6>&nbsp; Good Quality Product</h6>
         </div><br><br>
@@ -1576,25 +1770,54 @@ RIGHT SIDEBAR TOGGLE SECTION
       <div class="review-card">
         <div class="rating-heading">
           <div class="rating-highlight">
-            <span>4<i class="fas fa-star"></i></span>
+            <span>5&nbsp;<i class="fas fa-star"></i></span>
           </div>
-            <h6>&nbsp; Good Quality Product</h6>
+            <h6>&nbsp; Simply awesome</h6>
         </div><br><br>
-            <p>Value for money but its 10mm driver. Actually technical details mentioned 13mm but it is 10mm driver other it's ok.</p>
-            <p class="review-details">GANESH U Certified Buyer, Chennai 3 months ago</p>
+            <p>Awesome and genuine product!!
+               Sound clarity:10/10
+               Noise cancellation: 8/10
+               Dual Pair switching: 8/10</p>
+            <p class="review-details">Irfan K, Hyderabad 10 months ago</p>
       </div>
       <div class="review-card">
         <div class="rating-heading">
           <div class="rating-highlight">
-            <span>4<i class="fas fa-star"></i></span>
+            <span>4&nbsp;<i class="fas fa-star"></i></span>
           </div>
             <h6>&nbsp; Good Quality Product</h6>
         </div><br><br>
             <p>Value for money but its 10mm driver. Actually technical details mentioned 13mm but it is 10mm driver other it's ok.</p>
             <p class="review-details">GANESH U Certified Buyer, Chennai 3 months ago</p>
       </div>
+      <span id="review-dots"></span><span id="review-more">
       <div class="review-card">
-        <a href="#" style="color: #2979FF;">All 300 Reviews</a>
+        <div class="rating-heading">
+          <div class="rating-highlight">
+            <span>5&nbsp;<i class="fas fa-star"></i></span>
+          </div>
+            <h6>&nbsp; Simply awesome</h6>
+        </div><br><br>
+            <p>Awesome and genuine product!!
+               Sound clarity:10/10
+               Noise cancellation: 8/10
+               Dual Pair switching: 8/10</p>
+            <p class="review-details">Irfan K, Hyderabad 10 months ago</p>
+      </div>
+      <div class="review-card">
+        <div class="rating-heading">
+          <div class="rating-highlight">
+            <span>4&nbsp;<i class="fas fa-star"></i></span>
+          </div>
+            <h6>&nbsp; Good Quality Product</h6>
+        </div><br><br>
+            <p>Value for money but its 10mm driver. Actually technical details mentioned 13mm but it is 10mm driver other it's ok.</p>
+            <p class="review-details">GANESH U Certified Buyer, Chennai 3 months ago</p>
+      </div>
+    </span>
+      <div class="review-card">
+        <button onclick="myFunction()" id="reviewBtn">All 300 Reviews</button>
+        <!-- <a href="#" style="color: #2979FF;">All 300 Reviews</a> -->
       </div>
     </div>
 
@@ -1622,7 +1845,22 @@ RIGHT SIDEBAR TOGGLE SECTION
             <span class="price">₹ 349.00
             <del class="del">₹ 399.00</del></span>
           </div>
-          <button type="submit" class="add-to-cart">ADD TO CART</button>
+          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                        <form action="#" method="post">
+                          <fieldset>
+                            <input type="hidden" name="cmd" value="_cart" />
+                            <input type="hidden" name="add" value="1" />
+                            <input type="hidden" name="business" value=" " />
+                            <input type="hidden" name="item_name" value="Sweetheart Light Shoes" />
+                            <input type="hidden" name="amount" value="399.00" />
+                            <input type="hidden" name="discount_amount" value="50.00" />
+                            <input type="hidden" name="currency_code" value="INR" />
+                            <input type="hidden" name="return" value=" " />
+                            <input type="hidden" name="cancel_return" value=" " />
+                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
+                          </fieldset>
+                        </form>
+                      </div>
         </div> 
         <div class="featured-card">
           <div class="card-header">
@@ -1641,7 +1879,22 @@ RIGHT SIDEBAR TOGGLE SECTION
             <span class="price">₹ 499.00
             <del class="del">₹ 599.00</del></span>
           </div>
-          <button type="submit" class="add-to-cart">ADD TO CART</button>
+          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                        <form action="#" method="post">
+                          <fieldset>
+                            <input type="hidden" name="cmd" value="_cart" />
+                            <input type="hidden" name="add" value="1" />
+                            <input type="hidden" name="business" value=" " />
+                            <input type="hidden" name="item_name" value="Denim Floral Jacket" />
+                            <input type="hidden" name="amount" value="599.00" />
+                            <input type="hidden" name="discount_amount" value="100.00" />
+                            <input type="hidden" name="currency_code" value="INR" />
+                            <input type="hidden" name="return" value=" " />
+                            <input type="hidden" name="cancel_return" value=" " />
+                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
+                          </fieldset>
+                        </form>
+                      </div>
         </div>
         <div class="featured-card">
           <div class="card-header">
@@ -1660,7 +1913,22 @@ RIGHT SIDEBAR TOGGLE SECTION
             <span class="price">₹ 599.00
             <del class="del">₹ 999.00</del></span>
           </div>
-          <button type="submit" class="add-to-cart">ADD TO CART</button>
+          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                        <form action="#" method="post">
+                          <fieldset>
+                            <input type="hidden" name="cmd" value="_cart" />
+                            <input type="hidden" name="add" value="1" />
+                            <input type="hidden" name="business" value=" " />
+                            <input type="hidden" name="item_name" value="Wooden Helicopter Toy" />
+                            <input type="hidden" name="amount" value="999.00" />
+                            <input type="hidden" name="discount_amount" value="400.00" />
+                            <input type="hidden" name="currency_code" value="INR" />
+                            <input type="hidden" name="return" value=" " />
+                            <input type="hidden" name="cancel_return" value=" " />
+                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
+                          </fieldset>
+                        </form>
+                      </div>
         </div>
         <div class="featured-card">
           <div class="card-header">
@@ -1679,7 +1947,22 @@ RIGHT SIDEBAR TOGGLE SECTION
             <span class="price">₹ 320.00
             <del class="del">₹ 340.00</del></span>
           </div>
-          <button type="submit" class="add-to-cart">ADD TO CART</button>
+          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                        <form action="#" method="post">
+                          <fieldset>
+                            <input type="hidden" name="cmd" value="_cart" />
+                            <input type="hidden" name="add" value="1" />
+                            <input type="hidden" name="business" value=" " />
+                            <input type="hidden" name="item_name" value="Plugo STEM Pack" />
+                            <input type="hidden" name="amount" value="340.00" />
+                            <input type="hidden" name="discount_amount" value="20.00" />
+                            <input type="hidden" name="currency_code" value="INR" />
+                            <input type="hidden" name="return" value=" " />
+                            <input type="hidden" name="cancel_return" value=" " />
+                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
+                          </fieldset>
+                        </form>
+                      </div>
         </div>
         <div class="featured-card">
           <div class="card-header">
@@ -1698,7 +1981,22 @@ RIGHT SIDEBAR TOGGLE SECTION
             <span class="price">₹ 280.00
             <del class="del">₹ 300.00</del></span>
           </div>
-          <button type="submit" class="add-to-cart">ADD TO CART</button>
+          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                        <form action="#" method="post">
+                          <fieldset>
+                            <input type="hidden" name="cmd" value="_cart" />
+                            <input type="hidden" name="add" value="1" />
+                            <input type="hidden" name="business" value=" " />
+                            <input type="hidden" name="item_name" value="Cotton-Blend Denim" />
+                            <input type="hidden" name="amount" value="300.00" />
+                            <input type="hidden" name="discount_amount" value="20.00" />
+                            <input type="hidden" name="currency_code" value="INR" />
+                            <input type="hidden" name="return" value=" " />
+                            <input type="hidden" name="cancel_return" value=" " />
+                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
+                          </fieldset>
+                        </form>
+                      </div>
         </div>
         <div class="featured-card">
           <div class="card-header">
@@ -1717,7 +2015,22 @@ RIGHT SIDEBAR TOGGLE SECTION
             <span class="price">₹ 249.00
             <del class="del">₹ 300.00</del></span>
           </div>
-          <button type="submit" class="add-to-cart">ADD TO CART</button>
+          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                        <form action="#" method="post">
+                          <fieldset>
+                            <input type="hidden" name="cmd" value="_cart" />
+                            <input type="hidden" name="add" value="1" />
+                            <input type="hidden" name="business" value=" " />
+                            <input type="hidden" name="item_name" value="Boys Regular Fit Jacket" />
+                            <input type="hidden" name="amount" value="300.00" />
+                            <input type="hidden" name="discount_amount" value="51.00" />
+                            <input type="hidden" name="currency_code" value="INR" />
+                            <input type="hidden" name="return" value=" " />
+                            <input type="hidden" name="cancel_return" value=" " />
+                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
+                          </fieldset>
+                        </form>
+                      </div>
         </div>
         <div class="featured-card">
           <div class="card-header">
@@ -1736,7 +2049,22 @@ RIGHT SIDEBAR TOGGLE SECTION
             <span class="price">₹ 180.00
             <del class="del">₹ 200.00</del></span>
           </div>
-          <button type="submit" class="add-to-cart">ADD TO CART</button>
+          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                        <form action="#" method="post">
+                          <fieldset>
+                            <input type="hidden" name="cmd" value="_cart" />
+                            <input type="hidden" name="add" value="1" />
+                            <input type="hidden" name="business" value=" " />
+                            <input type="hidden" name="item_name" value="Pink Jumpsuit for Kids" />
+                            <input type="hidden" name="amount" value="200.00" />
+                            <input type="hidden" name="discount_amount" value="20.00" />
+                            <input type="hidden" name="currency_code" value="INR" />
+                            <input type="hidden" name="return" value=" " />
+                            <input type="hidden" name="cancel_return" value=" " />
+                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
+                          </fieldset>
+                        </form>
+                      </div>
         </div>
         <div class="featured-card">
           <div class="card-header">
@@ -1755,7 +2083,22 @@ RIGHT SIDEBAR TOGGLE SECTION
             <span class="price">₹ 499.00
             <del class="del">₹ 599.00</del></span>
           </div>
-          <button type="submit" class="add-to-cart">ADD TO CART</button>
+          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                        <form action="#" method="post">
+                          <fieldset>
+                            <input type="hidden" name="cmd" value="_cart" />
+                            <input type="hidden" name="add" value="1" />
+                            <input type="hidden" name="business" value=" " />
+                            <input type="hidden" name="item_name" value="Denim Floral Jacket" />
+                            <input type="hidden" name="amount" value="599.00" />
+                            <input type="hidden" name="discount_amount" value="100.00" />
+                            <input type="hidden" name="currency_code" value="INR" />
+                            <input type="hidden" name="return" value=" " />
+                            <input type="hidden" name="cancel_return" value=" " />
+                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
+                          </fieldset>
+                        </form>
+                      </div>
         </div>       
       </div><br>
       <hr>
@@ -1782,7 +2125,23 @@ RIGHT SIDEBAR TOGGLE SECTION
             <span class="price">₹ 349.00
             <del class="del">₹ 399.00</del></span>
           </div>
-          <button type="submit" class="add-to-cart">ADD TO CART</button>
+                      <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                        <form action="#" method="post">
+                          <fieldset>
+                            <input type="hidden" name="cmd" value="_cart" />
+                            <input type="hidden" name="add" value="1" />
+                            <input type="hidden" name="business" value=" " />
+                            <input type="hidden" name="item_name" value="Sweetheart Light Shoes" />
+                            <input type="hidden" name="amount" value="399.00" />
+                            <input type="hidden" name="discount_amount" value="50.00" />
+                            <input type="hidden" name="currency_code" value="INR" />
+                            <input type="hidden" name="return" value=" " />
+                            <input type="hidden" name="cancel_return" value=" " />
+                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
+                          </fieldset>
+                        </form>
+                      </div>
+          <!-- <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button> -->
         </div> 
         <div class="featured-card">
           <div class="card-header">
@@ -1801,7 +2160,22 @@ RIGHT SIDEBAR TOGGLE SECTION
             <span class="price">₹ 499.00
             <del class="del">₹ 599.00</del></span>
           </div>
-          <button type="submit" class="add-to-cart">ADD TO CART</button>
+          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                        <form action="#" method="post">
+                          <fieldset>
+                            <input type="hidden" name="cmd" value="_cart" />
+                            <input type="hidden" name="add" value="1" />
+                            <input type="hidden" name="business" value=" " />
+                            <input type="hidden" name="item_name" value="Denim Floral Jacket" />
+                            <input type="hidden" name="amount" value="599.00" />
+                            <input type="hidden" name="discount_amount" value="100.00" />
+                            <input type="hidden" name="currency_code" value="INR" />
+                            <input type="hidden" name="return" value=" " />
+                            <input type="hidden" name="cancel_return" value=" " />
+                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
+                          </fieldset>
+                        </form>
+                      </div>
         </div>
         <div class="featured-card">
           <div class="card-header">
@@ -1820,7 +2194,22 @@ RIGHT SIDEBAR TOGGLE SECTION
             <span class="price">₹ 599.00
             <del class="del">₹ 999.00</del></span>
           </div>
-          <button type="submit" class="add-to-cart">ADD TO CART</button>
+          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                        <form action="#" method="post">
+                          <fieldset>
+                            <input type="hidden" name="cmd" value="_cart" />
+                            <input type="hidden" name="add" value="1" />
+                            <input type="hidden" name="business" value=" " />
+                            <input type="hidden" name="item_name" value="Wooden Helicopter Toy" />
+                            <input type="hidden" name="amount" value="999.00" />
+                            <input type="hidden" name="discount_amount" value="400.00" />
+                            <input type="hidden" name="currency_code" value="INR" />
+                            <input type="hidden" name="return" value=" " />
+                            <input type="hidden" name="cancel_return" value=" " />
+                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
+                          </fieldset>
+                        </form>
+                      </div>
         </div>
         <div class="featured-card">
           <div class="card-header">
@@ -1839,7 +2228,22 @@ RIGHT SIDEBAR TOGGLE SECTION
             <span class="price">₹ 320.00
             <del class="del">₹ 340.00</del></span>
           </div>
-          <button type="submit" class="add-to-cart">ADD TO CART</button>
+          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                        <form action="#" method="post">
+                          <fieldset>
+                            <input type="hidden" name="cmd" value="_cart" />
+                            <input type="hidden" name="add" value="1" />
+                            <input type="hidden" name="business" value=" " />
+                            <input type="hidden" name="item_name" value="Plugo STEM Pack" />
+                            <input type="hidden" name="amount" value="340.00" />
+                            <input type="hidden" name="discount_amount" value="20.00" />
+                            <input type="hidden" name="currency_code" value="INR" />
+                            <input type="hidden" name="return" value=" " />
+                            <input type="hidden" name="cancel_return" value=" " />
+                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
+                          </fieldset>
+                        </form>
+                      </div>
         </div>
         <div class="featured-card">
           <div class="card-header">
@@ -1858,7 +2262,22 @@ RIGHT SIDEBAR TOGGLE SECTION
             <span class="price">₹ 280.00
             <del class="del">₹ 300.00</del></span>
           </div>
-          <button type="submit" class="add-to-cart">ADD TO CART</button>
+          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                        <form action="#" method="post">
+                          <fieldset>
+                            <input type="hidden" name="cmd" value="_cart" />
+                            <input type="hidden" name="add" value="1" />
+                            <input type="hidden" name="business" value=" " />
+                            <input type="hidden" name="item_name" value="Cotton-Blend Denim" />
+                            <input type="hidden" name="amount" value="300.00" />
+                            <input type="hidden" name="discount_amount" value="20.00" />
+                            <input type="hidden" name="currency_code" value="INR" />
+                            <input type="hidden" name="return" value=" " />
+                            <input type="hidden" name="cancel_return" value=" " />
+                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
+                          </fieldset>
+                        </form>
+                      </div>
         </div>
         <div class="featured-card">
           <div class="card-header">
@@ -1877,7 +2296,22 @@ RIGHT SIDEBAR TOGGLE SECTION
             <span class="price">₹ 249.00
             <del class="del">₹ 300.00</del></span>
           </div>
-          <button type="submit" class="add-to-cart">ADD TO CART</button>
+          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                        <form action="#" method="post">
+                          <fieldset>
+                            <input type="hidden" name="cmd" value="_cart" />
+                            <input type="hidden" name="add" value="1" />
+                            <input type="hidden" name="business" value=" " />
+                            <input type="hidden" name="item_name" value="Boys Regular Fit Jacket" />
+                            <input type="hidden" name="amount" value="300.00" />
+                            <input type="hidden" name="discount_amount" value="51.00" />
+                            <input type="hidden" name="currency_code" value="INR" />
+                            <input type="hidden" name="return" value=" " />
+                            <input type="hidden" name="cancel_return" value=" " />
+                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
+                          </fieldset>
+                        </form>
+                      </div>
         </div>
         <div class="featured-card">
           <div class="card-header">
@@ -1896,7 +2330,22 @@ RIGHT SIDEBAR TOGGLE SECTION
             <span class="price">₹ 180.00
             <del class="del">₹ 200.00</del></span>
           </div>
-          <button type="submit" class="add-to-cart">ADD TO CART</button>
+          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                        <form action="#" method="post">
+                          <fieldset>
+                            <input type="hidden" name="cmd" value="_cart" />
+                            <input type="hidden" name="add" value="1" />
+                            <input type="hidden" name="business" value=" " />
+                            <input type="hidden" name="item_name" value="Pink Jumpsuit for Kids" />
+                            <input type="hidden" name="amount" value="200.00" />
+                            <input type="hidden" name="discount_amount" value="20.00" />
+                            <input type="hidden" name="currency_code" value="INR" />
+                            <input type="hidden" name="return" value=" " />
+                            <input type="hidden" name="cancel_return" value=" " />
+                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
+                          </fieldset>
+                        </form>
+                      </div>
         </div>
         <div class="featured-card">
           <div class="card-header">
@@ -1915,7 +2364,22 @@ RIGHT SIDEBAR TOGGLE SECTION
             <span class="price">₹ 499.00
             <del class="del">₹ 599.00</del></span>
           </div>
-          <button type="submit" class="add-to-cart">ADD TO CART</button>
+          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                        <form action="#" method="post">
+                          <fieldset>
+                            <input type="hidden" name="cmd" value="_cart" />
+                            <input type="hidden" name="add" value="1" />
+                            <input type="hidden" name="business" value=" " />
+                            <input type="hidden" name="item_name" value="Denim Floral Jacket" />
+                            <input type="hidden" name="amount" value="599.00" />
+                            <input type="hidden" name="discount_amount" value="100.00" />
+                            <input type="hidden" name="currency_code" value="INR" />
+                            <input type="hidden" name="return" value=" " />
+                            <input type="hidden" name="cancel_return" value=" " />
+                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
+                          </fieldset>
+                        </form>
+                      </div>
         </div>       
       </div>    
 		</div>
@@ -1928,6 +2392,16 @@ RIGHT SIDEBAR TOGGLE SECTION
 <!---728x90--->
  
 </div>
+
+<!-- brands -->
+  <div style="display: flex;">
+    <img src="imgs/brands.png" class="brands">
+    <marquee behavior="alternate" onmouseover="this.stop();" onmouseout="this.start();">      
+    <img src="imgs/brands.jpg">
+  </marquee>
+  </div>
+  <!-- //brands -->
+  
 	<!-- footer -->
 	<footer>
 		<!-- footer third section -->
@@ -2429,6 +2903,111 @@ RIGHT SIDEBAR TOGGLE SECTION
 	<!-- //Js scripts -->
 
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8f1454d1dec3958a',t:'MTczNDA3NTg5MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='../../../../../../cdn-cgi/challenge-platform/h/g/scripts/jsd/f9063374b04d/maind41d.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+
+
+<!-- read more reviews -->
+<script>
+  function myFunction() {
+  var dots = document.getElementById("review-dots");
+  var moreText = document.getElementById("review-more");
+  var btnText = document.getElementById("reviewBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "View All Reviews"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "View Less Reviews"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<!-- end of read more reviews -->
+
+<!-- rate-product -->
+<script>
+    const stars = document.querySelectorAll(".star");
+const rating = document.getElementById("rating");
+const reviewText = document.getElementById("review");
+const submitBtn = document.getElementById("submit");
+const reviewsContainer = document.getElementById("reviews");
+
+stars.forEach((star) => {
+  star.addEventListener("click", () => {
+    const value = parseInt(star.getAttribute("data-value"));
+    rating.innerText = value;
+
+    // Remove all existing classes from stars
+    stars.forEach((s) => s.classList.remove("one", 
+                        "two", 
+                        "three", 
+                        "four", 
+                        "five"));
+
+    // Add the appropriate class to 
+    // each star based on the selected star's value
+    stars.forEach((s, index) => {
+      if (index < value) {
+        s.classList.add(getStarColorClass(value));
+      }
+    });
+
+    // Remove "selected" class from all stars
+    stars.forEach((s) => s.classList.remove("selected"));
+    // Add "selected" class to the clicked star
+    star.classList.add("selected");
+  });
+});
+
+submitBtn.addEventListener("click", () => {
+  const review = reviewText.value;
+  const userRating = parseInt(rating.innerText);
+
+  if (!userRating || !review) {
+    alert(
+"Please select a rating and provide a review before submitting."
+      );
+    return;
+  }
+
+  if (userRating > 0) {
+    const reviewElement = document.createElement("div");
+    reviewElement.classList.add("review");
+    reviewElement.innerHTML = 
+`<p><strong>Rating: ${userRating}/5</strong></p><p>${review}</p>`;
+    reviewsContainer.appendChild(reviewElement);
+
+    // Reset styles after submitting
+    reviewText.value = "";
+    rating.innerText = "0";
+    stars.forEach((s) => s.classList.remove("one", 
+                        "two", 
+                        "three", 
+                        "four", 
+                        "five", 
+                        "selected"));
+  }
+});
+
+function getStarColorClass(value) {
+  switch (value) {
+    case 1:
+      return "one";
+    case 2:
+      return "two";
+    case 3:
+      return "three";
+    case 4:
+      return "four";
+    case 5:
+      return "five";
+    default:
+      return "";
+  }
+}
+  </script>
+<!-- end of rate-product -->
 
 </body>
 </html>
