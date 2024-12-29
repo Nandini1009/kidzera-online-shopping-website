@@ -5747,6 +5747,9 @@ table {
     
 }
 
+.cod-spacing p {
+    padding-bottom: 7px;
+}
 
 
 
@@ -5756,3 +5759,51 @@ table {
 
 
 
+
+#image{
+    margin-top: 10px;
+    box-shadow: 2px 0 8px 3px rgba(0, 0, 0, 0.1);
+    width: 53%;
+    padding: 0 12px;
+    font-weight: 400;
+    padding-bottom: 0;
+    height: 40px;
+    user-select: none;
+    text-decoration: line-through;
+    font-style: italic;
+    font-size: x-large;
+    border: red 2px solid;
+    margin-bottom: 20px;
+    text-align-last: center;
+    margin-left: 10px;
+    
+}
+#user-input{
+    /*box-shadow: 5px 5px 5px 5px gray;*/
+    width:auto;
+    /*margin-right: 10px;*/
+    padding: 10px;
+    padding-bottom: 0px;
+    height: 40px;
+    border: red 0px solid;
+}
+.captcha-input{
+    border:none;
+    width: 117px;
+    padding: 5px;
+    box-shadow: 2px 0 8px 3px rgba(0, 0, 0, 0.1);
+}
+.captcha-input:focus{
+    outline: none;
+    border: 1px solid #fbd03d;
+}
+.inline{
+    display:inline-block;
+    padding: 16px 42px;
+}
+#captcha-btn{
+/*    box-shadow: 5px 5px 5px grey;*/
+    color: aqua;
+    margin: 10px;
+    background-color: brown;
+}
