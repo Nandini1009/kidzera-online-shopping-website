@@ -5412,7 +5412,11 @@ hr {
 }
 .cod-options {
     font-weight: 500;
-    font-size: 13px;
+    font-size: 11px;
+}
+.credit-card input::placeholder {
+    font-size: 12px;
+    font-weight: 500;
 }
 .cart-card {
     width: -webkit-fill-available !important;
@@ -5806,4 +5810,44 @@ table {
     color: aqua;
     margin: 10px;
     background-color: brown;
+}
+.thankyou {
+    width: 115px;
+}
+#thankyou .span {
+    font-size: 12px !important;
+}
+#thankyou  h6 {
+    font-weight: 700;
+    color: #8BC34A;
+}
+.netbanks {
+    width: 15px;
+}
+.gpsbtn {
+    padding: 7px;
+    background: #fbd03d;
+    border: none;
+    width: fit-content;
+    box-shadow: 2px 0 8px 3px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    color: #fff;
+}
+.addnewaddress {
+    padding: 3px;
+    margin: 5px;
+    width: 140px;
+}
+.addnew-card input::placeholder {
+    font-size: 12px;
+}
+.addnew-card textarea::placeholder {
+    font-size: 12px;
+}
+.addnew {
+    padding: 9px !important;
+}
+.addnew-card {
+    border: none;
+        padding: 26px 49px;
 }
