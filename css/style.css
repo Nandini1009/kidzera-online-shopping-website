@@ -16,7 +16,6 @@ body a {
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
 }
-
 a {
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
@@ -5286,10 +5285,24 @@ hr {
 }
 .debit-card {
     width: -webkit-fill-available !important;
-    border-radius: 6px;
-    border: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-top: none;
+    border-right: none;
+    border-left: none;
     padding: 9px;
     margin: 6px;
+}
+.gift-card input {
+    width: -webkit-fill-available !important;
+    border-bottom: 1px solid #ccc;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 5vh 0 1vh 0;
+}
+.gift-card input:focus {
+    border-bottom: 1px solid #fdb03d;
+    outline: none;
 }
 .debit-credit {
     padding: 16px;
@@ -5299,12 +5312,26 @@ hr {
 .label {
     margin-left: 8px !important;
 }
+ button:focus {
+    outline: none !important;
+}
+.btnn {
+    background: #292560;
+    color: #fff;
+    font-weight: 400;
+    padding: 9px;
+    border-radius: 6px;
+    margin: 2vh 0 1vh 5vh;
+}
+.font-safe {
+    font-size: 12px;
+}
 .debit-btn {
     background: #292560;
     color: #fff;
     padding: 10px 15px;
     width: -webkit-fill-available;
-    margin: 15px 7px;
+    /*margin: 15px 7px;*/
     border-radius: 6px;
 }
 .checkbox {
@@ -5419,21 +5446,28 @@ hr {
     font-weight: 500;
 }
 .cart-card {
-    width: -webkit-fill-available !important;
-    border-radius: 6px;
-    padding: 9px;
-    margin: 6px;
+    position: relative;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    /*border: 1px solid rgba(0, 0, 0, 0.125);*/
+    border-radius: 0.25rem;
+    box-shadow: 2px 0 8px 3px rgba(0, 0, 0, 0.1);
 }
 .change-add {
     padding: 6px;
-    color: #fdb03d;
-    border: 2px solid #fdb03d;
-    background: #fff;
+    color: #fff;
+    /*border: 2px solid #fdb03d;*/
+    background: #292560;
     border-radius: 12px;
     width: fit-content;
     font-weight: 700;
-    top: 21px;
-    right: 33px;
+    /*top: 21px;
+    right: 33px;*/
     position: absolute;
 }
 .cashback-off {
@@ -5469,22 +5503,16 @@ hr {
 .coupon p {
     font-weight: bold;
 }
-.delivery {
-    background: linear-gradient(to left, #ffcccc 0%, #fce9d5 61%);
-    padding: 20px;
-}
-.delivery img {
-    width: 25vh;
+
+.delivery-img {
+    width: -webkit-fill-available;
     margin-top: 10px;
 }
 .delivery h6 {
     float: right;
     font-weight: bolder;
 }
-.delivery p {
-    float: right;
-    font-weight: bold;
-}
+
 .delivery span {
     display: inline-grid;
     padding: 0 5px;
@@ -5496,7 +5524,7 @@ table, td, th {
 
 table {
   width: 100%;
-  border-collapse: separate;
+  border-collapse: collapse;
   padding: 20px;
 }
 .about-video {
@@ -5750,9 +5778,26 @@ table {
     outline: none;
     
 }
+.center-scr {
+    padding: 25vh 17vh 0 3vh;
+}
 
 .cod-spacing p {
     padding-bottom: 7px;
+}
+.footer-copy .container {
+    padding: 3vh;
+}
+.footer-copy {
+    border-top: 1px solid #bab7b7;
+    background: #060e1f;
+}
+.footer-copy a {
+    color: #2874f0;
+}
+.footer-copy p {
+    color: #fff;
+    font-weight: 400;
 }
 
 
@@ -5812,7 +5857,7 @@ table {
     background-color: brown;
 }
 .thankyou {
-    width: 115px;
+    width: 7vh;
 }
 #thankyou .span {
     font-size: 12px !important;
@@ -5828,7 +5873,7 @@ table {
     padding: 7px;
     background: #fbd03d;
     border: none;
-    width: fit-content;
+    width: -webkit-fill-available;
     box-shadow: 2px 0 8px 3px rgba(0, 0, 0, 0.1);
     font-weight: 600;
     color: #fff;
@@ -5836,13 +5881,26 @@ table {
 .addnewaddress {
     padding: 3px;
     margin: 5px;
-    width: 140px;
+    width: -webkit-fill-available;
+    border-bottom-style: groove;
+    border: 1px solid #969090;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 12px;
+    color: #8a8989;
+    padding: 5vh 0 1vh 0;
 }
 .addnew-card input::placeholder {
     font-size: 12px;
 }
-.addnew-card textarea::placeholder {
-    font-size: 12px;
+.addnew-card input:focus {
+    outline: none;
+    border-bottom: 1px solid #fbd03d;
+}
+.addnew-card select:focus {
+    outline: none;
+    border-bottom: 1px solid #fbd03d;
 }
 .addnew {
     padding: 9px !important;
@@ -5850,4 +5908,30 @@ table {
 .addnew-card {
     border: none;
         padding: 26px 49px;
+}
+.geo {
+    color: #2874f0;
+    font-weight: 500;
+    margin: -10vh
+}
+#geo input:focus {
+    outline: none;
+    border-bottom: 1px solid #fbd03d;
+}
+#chgdeliveryadd h6  {
+    color: #525151;
+}
+.address p {
+    font-size: 12px;
+}
+.security-tagline {
+    font-size: 14px;
+    color: #525151;
+    font-weight: 600;
+}
+.cart-dis {
+    background: linear-gradient(62deg, #7e70e403, #5fc5da33);
+    box-shadow: none;
+    border-top: 1px solid #bebcbc;
+    margin: 15px -16px -15px;
 }
