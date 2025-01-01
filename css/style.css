@@ -4965,7 +4965,7 @@ ul.twitter-feed a:hover {
 }
 
 .active:before {
-  content: "\2212";
+  /*content: "\2212";*/
 }
 .accordion .btn {
     display: contents;
