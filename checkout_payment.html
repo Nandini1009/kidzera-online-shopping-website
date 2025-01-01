@@ -73,6 +73,189 @@ if(typeof _bsa !== 'undefined' && _bsa) {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
+
+#image{
+    margin-top: 10px;
+    box-shadow: 2px 0 8px 3px rgba(0, 0, 0, 0.1);
+    width: 53%;
+    padding: 0 12px;
+    font-weight: 400;
+    padding-bottom: 0;
+    height: 40px;
+    user-select: none;
+    text-decoration: line-through;
+    font-style: italic;
+    font-size: x-large;
+    border: red 2px solid;
+    margin-bottom: 20px;
+    text-align-last: center;
+    margin-left: 10px;
+    
+}
+#user-input{
+    /*box-shadow: 5px 5px 5px 5px gray;*/
+    width:auto;
+    /*margin-right: 10px;*/
+    padding: 10px;
+    padding-bottom: 0px;
+    height: 40px;
+    border: red 0px solid;
+}
+.captcha-input{
+    border:none;
+    width: 117px;
+    padding: 5px;
+    box-shadow: 2px 0 8px 3px rgba(0, 0, 0, 0.1);
+}
+.captcha-input:focus{
+    outline: none;
+    border: 1px solid #fbd03d;
+}
+.inline{
+    display:inline-block;
+    padding: 16px 42px;
+}
+#captcha-btn{
+/*    box-shadow: 5px 5px 5px grey;*/
+    color: aqua;
+    margin: 10px;
+    background-color: brown;
+}
+.thankyou {
+    width: 7vh;
+}
+#thankyou .span {
+    font-size: 12px !important;
+}
+#thankyou  h6 {
+    font-weight: 700;
+    color: #8BC34A;
+}
+.netbanks {
+    width: 15px;
+}
+.gpsbtn {
+    padding: 7px;
+    background: #fbd03d;
+    border: none;
+    width: -webkit-fill-available;
+    box-shadow: 2px 0 8px 3px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    color: #fff;
+}
+.addnewaddress {
+    padding: 3px;
+    margin: 5px;
+    width: -webkit-fill-available;
+    border-bottom-style: groove;
+    border: 1px solid #969090;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 12px;
+    color: #8a8989;
+    padding: 5vh 0 1vh 0;
+}
+.addnew-card input::placeholder {
+    font-size: 12px;
+}
+.addnew-card input:focus {
+    outline: none;
+    border-bottom: 1px solid #fbd03d;
+}
+.addnew-card select:focus {
+    outline: none;
+    border-bottom: 1px solid #fbd03d;
+}
+.addnew {
+    padding: 9px !important;
+}
+.addnew-card {
+    border: none;
+        padding: 26px 49px;
+}
+.geo {
+    color: #2874f0;
+    font-weight: 500;
+    margin: -10vh
+}
+#geo input:focus {
+    outline: none;
+    border-bottom: 1px solid #fbd03d;
+}
+#chgdeliveryadd h6  {
+    color: #525151;
+}
+.address p {
+    font-size: 12px;
+}
+.security-tagline {
+    font-size: 14px;
+    color: #525151;
+    font-weight: 600;
+}
+.cart-dis {
+    background: linear-gradient(62deg, #7e70e403, #5fc5da33);
+    box-shadow: none;
+    border-top: 1px solid #bebcbc;
+    margin: 15px -16px -15px;
+}
+.coupons-card {
+    border: 1px solid #f8cea1 !important;
+    background: linear-gradient(to bottom right, #ffccff 0%, #ffffff 47%);
+    border-radius: 12px !important;
+    padding: 10px;
+    width: auto;
+    margin-right: 12px;
+}
+.coupons-card .detail {
+    color: #7a7676 !important;
+    font-size: 12px;
+    padding: 0 28px;
+    font-weight: 500;
+}
+.coupons-card a {
+    color: #f90630;
+    float: right;
+}
+.inner-card {
+    border: 1px dashed #ff6699 !important;
+    background: linear-gradient(to bottom right, #ffccff 0%, #ffffff 47%);
+    /*border-radius: 12px !important;*/
+    padding: 10px 30px;
+    width: auto;
+    /*margin-right: 12px;*/
+}
+.inner-card:before {
+    border: 1px dashed #ff6699;
+    content: "";
+    position: absolute;
+    top: 72%;
+    right: 10px;
+    height: 13px;
+    width: 8px;
+    background-color: #fff;
+    border-right: 0;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    z-index: 4;
+}
+.inner-card:after {
+    border: 1px dashed #ff6699;
+    content: "";
+    position: absolute;
+    top: 72%;
+    left: 10px;
+    height: 13px;
+    width: 8px;
+    background-color: #fff;
+    border-left: 0;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    z-index: 4;
+}
+
+
 #cart-id .card-header {
   background: transparent;
   border-bottom: none;
@@ -1305,7 +1488,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                 <div class="card text-center cashback-off">
               <div class="bnkkoffr">
                 <div class="row">
-                  <div class="col-lg-10 col-md-10 col-sm-10">
+                  <div class="col-lg-8 col-md-8 col-sm-8">
                     <div class="inner-header">
                       <div class="card-offer">
                        <p><img src="imgs/SIMPLLOGO.jpeg">
@@ -1314,7 +1497,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                       </div>
                   </div>
                   </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2">
+                  <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="card-offer">
                       <span>5/5</span>
                     </div>
@@ -1325,7 +1508,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                 <div class="card text-center cashback-off">
               <div class="">
                 <div class="row">
-                  <div class="col-lg-10 col-md-10 col-sm-10">
+                  <div class="col-lg-8 col-md-8 col-sm-8">
                     <div class="inner-header">
                       <div class="card-offer">
                        <p><img src="imgs/PNBlogo_v6.webp">
@@ -1334,7 +1517,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                       </div>
                   </div>
                   </div>
-                  <div class="col-2">
+                  <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="card-offer">
                       <span>4/5</span>
                     </div>
@@ -1345,7 +1528,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                 <div class="card text-center cashback-off">
               <div class="">
                 <div class="row">
-                  <div class="col-lg-10 col-md-10 col-sm-10">
+                  <div class="col-lg-8 col-md-8 col-sm-8">
                     <div class="inner-header">
                       <div class="card-offer">
                        <p><img src="imgs/JKBankLogo_v2.webp">
@@ -1354,7 +1537,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                       </div>
                   </div>
                   </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2">
+                  <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="card-offer">
                       <span>3/5</span>
                     </div>
@@ -1365,7 +1548,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                 <div class="card text-center cashback-off">
               <div class="">
                 <div class="row">
-                  <div class="col-lg-10 col-md-10 col-sm-10">
+                  <div class="col-lg-8 col-md-8 col-sm-8">
                     <div class="inner-header">
                       <div class="card-offer">
                        <p><img src="imgs/PaytmLogo_v6.webp">
@@ -1374,7 +1557,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                       </div>
                   </div>
                   </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2">
+                  <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="card-offer">
                       <span>2/5</span>
                     </div>
@@ -1385,7 +1568,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                 <div class="card text-center cashback-off">
               <div class="">
                 <div class="row">
-                  <div class="col-lg-10 col-md-10 col-sm-10">
+                  <div class="col-lg-8 col-md-8 col-sm-8">
                     <div class="inner-header">
                       <div class="card-offer">
                        <p><img src="imgs/Cred_logo.webp">
@@ -1394,7 +1577,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                       </div>
                   </div>
                   </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2">
+                  <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="card-offer">
                       <span>1/5</span>
                     </div>
@@ -1982,7 +2165,7 @@ RIGHT SIDEBAR TOGGLE SECTION
               <span>&nbsp; Apply Coupon</span></p>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
-              <a href="#">View All</a>
+              <a href="#" data-toggle="modal" data-target="#coupons" class="link">View All</a>
             </div>
           </div>
           <div class="row">
@@ -1994,12 +2177,9 @@ RIGHT SIDEBAR TOGGLE SECTION
             </div>
           </div><hr>
           <div class="row">
-            <div class="col-lg-9 col-md-9 col-sm-9">
+            <div class="col-lg-12 col-md-12 col-sm-12">
               <p><img src="imgs/gift-certificate.svg">
               <span>&nbsp; Have a Gift Certificate?</span></p>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
-              <a href="#">View All</a>
             </div>
           </div>
           <div class="row">
@@ -2068,11 +2248,8 @@ RIGHT SIDEBAR TOGGLE SECTION
             </div>
           </div><hr>
           <div class="row">
-            <div class="col-lg-1 col-md-1 col-sm-1">
-              <img src="imgs/shield_5f9216.png" class="pay-icons">
-            </div>
-            <div class="col-lg-11 col-md-11 col-sm-11">
-              <p class="font-safe"><b>Safe and Secure Payments. Easy returns. 100% Authentic products.</b></p>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <p class="font-safe"><img src="imgs/shield_5f9216.png" class="pay-icons"><b>Safe and Secure Payments. Easy returns. 100% Authentic products.<b></p>
             </div>
           </div>                    
         </div>
@@ -2354,7 +2531,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                   <input type="radio" name="radio">
                   <label><img src="imgs/netbanks/sbi.svg" class="netbanks">&nbsp; State Bank Of India</label><br><br>
                   <div class="section_room_pay">
-                    <select class="year debit-card">
+                    <select class="year debit-card" style="width: 100% !important;">
                       <label>Other Banks</label>
                       <option value="">--- Select Banks ---</option>
                       <option value="ALB-NA">Allahabad Bank NetBanking</option>
@@ -2521,6 +2698,145 @@ RIGHT SIDEBAR TOGGLE SECTION
     </div>
   </div>
 <!--  end of order placed -->
+
+<!-- view all coupons -->
+<div class="modal fade" id="coupons" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center">Coupons and Offers</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        <div class="row">
+           <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="card coupons-card">
+              <div class="card-headers">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                       <p><img src="imgs/club_membership.svg">
+                        Flat 50% Off*</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <p class="detail">On your first order</p>
+                  </div>
+                </div>
+              </div><br>
+              
+              <div class="card-footers text-muted inner-card">
+                <div class="row">
+                  <div class="col-8">
+                    <h6>BHJKUGY50</h6>
+                  </div>
+                  <div class="col-4">
+                    <a href="">Collect</a>
+                  </div>
+                </div>
+              </div>
+            </div>          
+           </div>
+          </div>
+          <br>
+          <div class="row">
+           <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="card coupons-card">
+              <div class="card-headers">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                       <p><img src="imgs/club_membership.svg">
+                        Flat 50% Off*</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <p class="detail">On your first order</p>
+                  </div>
+                </div>
+              </div><br>
+              
+              <div class="card-footers text-muted inner-card">
+                <div class="row">
+                  <div class="col-8">
+                    <h6>BHJKUGY50</h6>
+                  </div>
+                  <div class="col-4">
+                    <a href="">Collect</a>
+                  </div>
+                </div>
+              </div>
+            </div>          
+           </div>
+          </div>
+          <br>
+          <div class="row">
+           <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="card coupons-card">
+              <div class="card-headers">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                       <p><img src="imgs/club_membership.svg">
+                        Flat 50% Off*</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <p class="detail">On your first order</p>
+                  </div>
+                </div>
+              </div><br>
+              
+              <div class="card-footers text-muted inner-card">
+                <div class="row">
+                  <div class="col-8">
+                    <h6>BHJKUGY50</h6>
+                  </div>
+                  <div class="col-4">
+                    <a href="">Collect</a>
+                  </div>
+                </div>
+              </div>
+            </div>          
+           </div>
+          </div>
+          <br><div class="row">
+           <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="card coupons-card">
+              <div class="card-headers">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                       <p><img src="imgs/club_membership.svg">
+                        Flat 50% Off*</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <p class="detail">On your first order</p>
+                  </div>
+                </div>
+              </div><br>
+              
+              <div class="card-footers text-muted inner-card">
+                <div class="row">
+                  <div class="col-8">
+                    <h6>BHJKUGY50</h6>
+                  </div>
+                  <div class="col-4">
+                    <a href="">Collect</a>
+                  </div>
+                </div>
+              </div>
+            </div>          
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- end of view all coupons -->
 
  
 
