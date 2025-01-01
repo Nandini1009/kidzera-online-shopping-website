@@ -8,6 +8,7 @@ body {
     text-align: justify;
 }
 
+
 body a {
     text-decoration: none;
     transition: 0.5s all;
@@ -2155,6 +2156,7 @@ li.subitem1 p {
 table.timetable_sub {
     width: 100%;
     margin: 0 auto;
+    border-collapse: separate;
 }
 
 .timetable_sub th {
@@ -4894,8 +4896,8 @@ ul.twitter-feed a:hover {
 
 /* new addons  */
 .logo {
-    width: 270px;
-    margin: -125px 0 -127px -47px;
+   /* width: 270px;
+    margin: -14px 0 -43px 0;*/
 }
 .slogan {
     width: 250px;
