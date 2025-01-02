@@ -927,7 +927,7 @@ h3.tittle-w3l {
 }
 
 #PPminicarts ul {
-    width: 548px !important;
+    width: -webkit-fill-available !important;
 }
 
 #PPminicarts .minicarts-item a {
