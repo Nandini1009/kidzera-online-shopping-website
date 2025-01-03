@@ -921,7 +921,7 @@ h3.tittle-w3l {
 }
 
 #PPminicarts form {
-    width: 590px !important;
+    width: 616px;
     padding: 10px 20px 40px !important;
     max-height: 450px !important;
 }
@@ -5566,7 +5566,20 @@ table {
   width: 100%;
   background: none;
 }
-.category-img:hover {
+.game-img {
+  width: 49.8%;
+  background: none;
+}
+.inline {
+   display: flex;
+   padding: 15px;
+}
+.zoom-in:hover {
+  transform: scale(1.1);
+  /*box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);*/
+  background: transparent;
+}
+.shadow-in:hover {
   transform: scale(1.1);
   /*box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);*/
   background: transparent;
@@ -5574,7 +5587,7 @@ table {
 
 .wear-card {
     position: relative;
-    width: 25rem !important;
+    width: auto !important;
     display: flex;
     flex-direction: column;
     min-width: 0;
@@ -5637,7 +5650,7 @@ table {
     width: 100%;
 }
 .footwear {
-    width: 13.9%;
+    width: 100%;
 }
 .footwear:hover {
   /*transform: scale(1.1);*/
@@ -5822,4 +5835,6 @@ table {
 
 
 
-
+.book {
+    padding: 10px;
+}
