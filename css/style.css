@@ -5556,7 +5556,7 @@ table {
     color: #232323;
     font-weight: bolder;
     text-align: center;
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 .category-imgs {
   width: 37vh;
@@ -5574,15 +5574,22 @@ table {
    display: flex;
    padding: 15px;
 }
+.zoom-img {
+  transform: scale(1.1);
+  /*box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);*/
+  background: transparent;
+}
 .zoom-in:hover {
   transform: scale(1.1);
   /*box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);*/
   background: transparent;
 }
 .shadow-in:hover {
-  transform: scale(1.1);
+  /*transform: scale(1.1);*/
   /*box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);*/
-  background: transparent;
+  filter: drop-shadow(10px 10px 20px rgba(36, 36, 36, 0.5));
+  background: none !important;
+  border: none !important;
 }
 
 .wear-card {
@@ -5827,14 +5834,9 @@ table {
     color: #fff;
     font-weight: 400;
 }
-
-
-
-
-
-
-
-
 .book {
     padding: 10px;
+}
+.background-shadow {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);
 }
