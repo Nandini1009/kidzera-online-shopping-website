@@ -1,0 +1,23 @@
+ <!DOCTYPE html>
+    <html lang="en">
+      <head> </head>
+      <body>
+        <div id="whereIWantRecaptcha"></div>
+        <button id="myButton">show Recaptcha</button>
+        <script
+          src="https://www.google.com/recaptcha/api.js?render=explicit"
+          async
+          defer
+        ></script>
+        
+        <script>
+          var button = document.querySelector('#myButton');
+          button.addEventListener('click', function(){
+            grecaptcha.render('whereIWantRecaptcha', {
+              'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+            });
+          });
+        </script>
+        
+      </body>
+    </html>
