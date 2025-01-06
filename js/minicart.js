@@ -1829,6 +1829,7 @@ Cart.prototype.remove = function remove(idx) {
     }
 
     return !!item.length;
+    
 };
 
 

@@ -75,6 +75,7 @@ ul {
 
 label {
     margin: 0;
+    font-weight: 500 !important;
 }
 
 :root {
@@ -184,8 +185,8 @@ label.col-form-label {
 }
 
 input.form-control {
-    background: var(--bg-grey);
-    border: none;
+    background: transparent;
+    border: 1px solid #ccc;
     height: auto;
     padding: 12px;
     font-size: 15px;
@@ -2187,19 +2188,21 @@ td.invert-image a img {
 
 .rem {
     position: relative;
+    display: inline-flex;
 }
 
 .close1,
 .close2,
 .close3 {
-    background: url('../images/close_1.png') no-repeat 0px 0px #fff;
-    cursor: pointer;
+    /*background: url('../images/close_1.png') no-repeat 0px 0px #fff;*/
+    /*cursor: pointer;
     width: 28px;
     height: 28px;
-    position: absolute;
     right: 15px;
     top: -13px;
-    border-radius: 50%;
+    border-radius: 50%;*/
+    cursor: pointer;
+    position: relative;
     -webkit-transition: color 0.2s ease-in-out;
     -moz-transition: color 0.2s ease-in-out;
     -o-transition: color 0.2s ease-in-out;
@@ -2210,6 +2213,7 @@ td.invert-image a img {
 
 .value-minus,
 .value-plus {
+    border-radius: 50%;
     height: 40px;
     line-height: 24px;
     width: 40px;
@@ -2222,8 +2226,9 @@ td.invert-image a img {
     text-align: center;
     -webkit-user-select: none;
     -moz-user-select: none;
-    border: 1px solid var(--border-color-light);
+    border: 1px solid #c2c2c2;
     vertical-align: bottom;
+    background: linear-gradient(#fff,#f9f9f9);
 }
 
 .quantity-select .entry.value-minus:before,
@@ -2253,13 +2258,13 @@ td.invert-image a img {
 
 .value {
     cursor: default;
-    width: 40px;
+    width: 70px;
     height: 40px;
     padding: 8px 0px;
     color: var(--heading-color);
     line-height: 24px;
-    border: 1px solid var(--border-color-light);
-    background-color: var(--bg-grey);
+    border: 1px solid #c2c2c2;
+    background-color: none;
     text-align: center;
     display: inline-block;
     margin-right: 3px;
@@ -5109,6 +5114,9 @@ ul.twitter-feed a:hover {
 hr {
     border-bottom: 4px solid #f5f5f5 !important;
 }
+.hr {
+    border-bottom: 1px solid #f5f5f5 !important;
+}
 .total-ratings {
     color: #FFC107;
     display: flex;
@@ -5839,4 +5847,122 @@ table {
 }
 .background-shadow {
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.new-cart {
+    padding: 40px;
+}
+.new-cart span {
+    color: #27A63F;
+}
+.new-cart p {
+    color: #707070;
+}
+.quantity {
+    padding: 17px;
+}
+.shop-more-btn {
+    color: #fff;
+    background: #292560;
+    border: 1px solid #292560;
+    font-weight: 600;
+    width: 200px;
+    padding: 10px;
+}
+.shop-more-btn:focus {
+    outline: none;
+}
+
+.marginright{
+  letter-spacing: 2px;
+}
+.content {
+    justify-self: center;
+    padding: 10px;
+}
+.content h6 {
+    font-weight: 600;
+    color: var(--heading-color);
+    justify-self: center;
+}
+.content span {
+    font-weight: bold;
+    font-size: 18px;
+}
+.content del {
+    color: var(--font-color);
+    font-size: 14px;
+    font-weight: 300;
+}
+.featured-item {
+    position: relative;
+    border: 1px solid var(--border-color-light);
+    border-radius: 8px;
+    padding: 1.5em 0;
+    height: 100%;
+}
+.grand-total {
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+    color: grey;
+    float: right !important;
+    padding-top: 5px;
+}
+.btn-shopping-style {
+    color: #fff;
+    background: #000;
+    border: none;
+    padding: 12px 28px;
+}
+.btn-shopping-style:hover {
+    color: #fff;
+    background: #fdb03d;
+    border: none;
+}
+.btn-shopping-style:focus {
+    outline: none;
+}
+.right {
+    float: right;
+}
+.btn-remove {
+    color: #ff4c4c;
+    border: 2px solid #ff4c4c;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 13px;
+    width: 30px;
+    font-weight: 700;
+}
+.shop {
+    margin: 10px;
+    width: -webkit-fill-available;
+}
+.pagination {
+    text-align: center;
+    margin-top: 2rem;
+    place-content: center;
+}
+
+.pagination a {
+    color: #292560;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #292560;
+    margin: 0 5px;
+    border-radius: 4px;
+}
+
+.pagination a:hover {
+    background-color: #292560;
+    color: white;
+}
+
+.pagination .active {
+    background-color: #292560;
+    color: white;
+}
+#page-numbers {
+    margin-top: 20px;
+    font-size: 16px;
 }
