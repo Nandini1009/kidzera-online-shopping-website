@@ -73,6 +73,14 @@ if(typeof _bsa !== 'undefined' && _bsa) {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
+.btn:focus {
+  outline: none;
+  border-top: none;
+}
+.btn:focus after {
+  outline: none;
+  border-top: none;
+}
 
 #w3lDemoBar.w3l-demo-bar {
   top: 0;
@@ -903,8 +911,8 @@ RIGHT SIDEBAR TOGGLE SECTION
                   <input type="hidden" name="cmd" value="_cart">
                   <input type="hidden" name="display" value="1">
                   <nav class=" navbar-expand-lg ">
-                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                     <button type="button" class="btn btn-primary my-2 my-sm-0" data-toggle="modal" data-target="#staticBackdrop">
+                   <div class="" id="navbarSupportedContent">
+                     <button type="button" class="btn my-2 my-sm-0" data-toggle="modal" data-target="#staticBackdrop">
                        <i class="fas fa-shopping-cart marginright total-count"></i>
                      </button> 
                      <!-- <button style="margin-left:8px;" class="clear-cart btn btn-danger">Clear Cart</button> -->         
@@ -1121,7 +1129,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                 <a class="dropdown-item" href="product.html">Swings</a>
               </div>
             </li> 
-            <li class="nav-item active mr-lg-2 mb-lg-0 mb-2">
+            <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
               <a class="nav-link" href="product.html">New Arrivals</a>
             </li> 
             <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
@@ -1147,265 +1155,25 @@ RIGHT SIDEBAR TOGGLE SECTION
  
 </div>
   <!-- top Products -->
-  <div class="ads-grid py-5">
+  <div class="ads-grid">
     <div class="container py-md-5 py-4">
-      <!-- tittle heading -->
-      <h3 class="tittle-w3l text-center mb-lg-5 mb-sm-4 mb-3">
-        <span class="font-weight-normal">Our</span> New Products</h3>
-      <!-- //tittle heading -->
-      <div class="row">
-        <!-- product right -->
-        <div class="col-lg-3 col-md-3 col-sm-3 mt-lg-0 mt-4 p-lg-0 order-lg-first order-last">
-          <div class="side-bar p-sm-4 p-3">
-            <!-- reviews -->
-            <div class="customer-rev left-side py-2">
-              <h3 class="agileits-sear-head mb-3">Ratings</h3>
-              <ul>
-                <li>
-                  <a href="#">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span>5.0</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span>4.0</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                    <span>3.5</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span>3.0</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                    <span>2.5</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <!-- //reviews -->
-            <!-- price -->
-            <div class="range py-2">
-              <h3 class="agileits-sear-head mb-3">Price</h3>
-              <div class="w3l-range">
-                <ul>
-                  <li>
-                    <a href="#">₹ 0 - ₹ 250</a>
-                  </li>
-                  <li class="my-1">
-                    <a href="#">₹ 250 - ₹ 500</a>
-                  </li>
-                  <li>
-                    <a href="#">₹ 500 - ₹ 1000</a>
-                  </li>
-                  <li class="my-1">
-                    <a href="#">₹ 1000 - ₹ 2000</a>
-                  </li>
-                  <li>
-                    <a href="#">₹ 2000 - ₹ 3000</a>
-                  </li>
-                  <li class="mt-1">
-                    <a href="#">₹ 3000 and above</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- //price -->
-            <!-- discounts -->
-            <div class="left-side py-2">
-              <h3 class="agileits-sear-head mb-3">Discount</h3>
-              <ul>
-                <li>
-                  <input type="checkbox" class="checked">
-                  <span class="span">5% or More</span>
-                </li>
-                <li>
-                  <input type="checkbox" class="checked">
-                  <span class="span">10% or More</span>
-                </li>
-                <li>
-                  <input type="checkbox" class="checked">
-                  <span class="span">20% or More</span>
-                </li>
-                <li>
-                  <input type="checkbox" class="checked">
-                  <span class="span">30% or More</span>
-                </li>
-                <li>
-                  <input type="checkbox" class="checked">
-                  <span class="span">50% or More</span>
-                </li>
-                <li>
-                  <input type="checkbox" class="checked">
-                  <span class="span">60% or More</span>
-                </li>
-              </ul>
-            </div>
-            <!-- //discounts -->
-            <!-- electronics -->
-            <div class="left-side py-2">
-              <h3 class="agileits-sear-head mb-3">Products</h3>
-              <ul>
-                <li>
-                  <input type="checkbox" class="checked">
-                  <span class="span">Toys & Gaming</span>
-                </li>
-                <li>
-                  <input type="checkbox" class="checked">
-                  <span class="span">Fashion Accessories</span>
-                </li>
-                <li>
-                  <input type="checkbox" class="checked">
-                  <span class="span">Diaper & Rompers</span>
-                </li>
-                <li>
-                  <input type="checkbox" class="checked">
-                  <span class="span">Woolen Bottoms</span>
-                </li>
-                <li>
-                  <input type="checkbox" class="checked">
-                  <span class="span">Winter Nightwear</span>
-                </li>
-                <li>
-                  <input type="checkbox" class="checked">
-                  <span class="span">Kids Umbrella</span>
-                </li>
-                <li>
-                  <input type="checkbox" class="checked">
-                  <span class="span">Winter Boots</span>
-                </li>
-                <li>
-                  <input type="checkbox" class="checked">
-                  <span class="span">LED Shoes</span>
-                </li>
-                <li>
-                  <input type="checkbox" class="checked">
-                  <span class="span">Musical Walkers</span>
-                </li>
-                <li>
-                  <input type="checkbox" class="checked">
-                  <span class="span">Tricycles</span>
-                </li>
-                <li>
-                  <input type="checkbox" class="checked">
-                  <span class="span">Bicycles</span>
-                </li>
-                <li>
-                  <input type="checkbox" class="checked">
-                  <span class="span">Kids Scooters</span>
-                </li>
-                <li>
-                  <input type="checkbox" class="checked">
-                  <span class="span">Swings</span>
-                </li>
-              </ul>
-            </div>
-            <!-- //electronics -->
-            <!-- delivery -->
-            <div class="left-side py-2">
-              <h3 class="agileits-sear-head mb-3">Cash On Delivery</h3>
-              <ul>
-                <li>
-                  <input type="checkbox" class="checked">
-                  <span class="span">Eligible for Cash On Delivery</span>
-                </li>
-              </ul>
-            </div>
-            <!-- //delivery -->
-            <!-- arrivals -->
-            <div class="left-side py-2">
-              <h3 class="agileits-sear-head mb-3">New Arrivals</h3>
-              <ul>
-                <li>
-                  <input type="checkbox" class="checked">
-                  <span class="span">Last 30 days</span>
-                </li>
-                <li>
-                  <input type="checkbox" class="checked">
-                  <span class="span">Last 90 days</span>
-                </li>
-              </ul>
-            </div>
-            <!-- //arrivals -->
-            <!-- best seller -->
-            <div class="f-grid py-2">
-              <h3 class="agileits-sear-head mb-3">Best Seller</h3>
-              <div class="box-scroll">
-                <div class="scroll">
-                  <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-3 left-mar">
-                      <img src="imgs/toy1.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-lg-9 col-md-9 col-sm-9 w3_mvd">
-                      <a href="#">Music TV for Kids with Demo too (Must buy for kids)</a>
-                      <a href="#" class="price-mar mt-2">₹ 200.00</a>
-                    </div>
-                  </div>
-                  <div class="row my-4">
-                    <div class="col-lg-3 col-md-3 col-sm-3 left-mar">
-                      <img src="imgs/toy2.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-lg-9 col-md-9 col-sm-9 w3_mvd">
-                      <a href="#">PlayShifu Plugo STEM Pack - Count, Letters & Link Kits (Yellow)</a>
-                      <a href="#" class="price-mar mt-2">₹ 320.00</a>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-3 left-mar">
-                      <img src="imgs/toy4.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-lg-9 col-md-9 col-sm-9 w3_mvd">
-                      <a href="#">LEGO Theme – One Brick Planet Festival Calender 40678</a>
-                      <a href="#" class="price-mar mt-2">₹ 199.00 </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- //best seller -->
-          </div>
-          <!-- //product right -->
-        </div>
+      <div class="row">        
         <!-- product left -->
-        <div class="agileinfo-ads-display col-lg-9 order-lg-last order-first">
+        <div class="agileinfo-ads-display order-lg-last order-first">
           <div class="wrapper">
         <main>
       <section>
-         <div class="featured-area pt-100 pb-70">
+         <div id="data-container" class="featured-area pt-100 pb-70">
             <div class="container">
                <div class="tab featured-tab-area">
                   <div class="tab_content current active pt-45">
                      <div class="tabs_item current">
                         <div class="row">
-                           <div class="col-lg-4 col-md-4 col-sm-4">
-                              <div class="featured-item">
+                           <div class="col-lg-3 col-md-3 col-sm-3 part">
+                              <div class="featured-item">    
                                  <div class="featured-item-img">
                                        <div class="men-thumb-item text-center">
-                                         <img src="imgs/toy1.jpg" alt="" class="img-fluid">
+                                         <img src="imgs/bathing/1.png" alt="" class="img-fluid">
                                          <div class="men-cart-pro">
                                            <div class="inner-men-cart-pro">
                                             <a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -1413,23 +1181,39 @@ RIGHT SIDEBAR TOGGLE SECTION
                                          </div>
                                        </div>
                                  </div><br>
+                                 <span class="mark">Best Seller</span> <button type="submit" class="wishlist">
+                                  <svg width="25" height="23" viewBox="0 0 18 16">
+                                     <path
+                                       d="M9.01163699,14.9053769 C8.72930024,14.7740736 8.41492611,14.6176996 8.07646224,14.4366167 C7.06926649,13.897753 6.06198912,13.2561336 5.12636931,12.5170512 C2.52930452,10.4655288 1.00308384,8.09476443 1.00000218,5.44184117 C0.997549066,2.99198843 2.92175104,1.01242822 5.28303025,1.01000225 C6.41066623,1.00972036 7.49184369,1.4629765 8.28270844,2.2678673 L8.99827421,2.9961237 L9.71152148,2.26559643 C10.4995294,1.45849728 11.5791258,1.0023831 12.7071151,1.00000055 L12.7060299,1.00000225 C15.0693815,0.997574983 16.9967334,2.97018759 17.0000037,5.421337 C17.0038592,8.07662382 15.4809572,10.4530151 12.8850542,12.5121483 C11.9520963,13.2521931 10.9477036,13.8951276 9.94340074,14.4354976 C9.60619585,14.6169323 9.29297309,14.7736855 9.01163699,14.9053769 Z" stroke="#ff0000" stroke-width="1"/>
+                                      </svg>
+                                </button>                                
                                  <div class="content">
-                                    <h6><a href="single.html">Musical TV Toy</a></h6>
+                                    <h6><a href="single.html">Softsens Baby 3 Step Bath & Skin Combo | Baby Wash + Baby Shampoo + Baby Powder</a></h6>
                                     <div class="content-in">
-                                       <span>₹ 230.00 </span>
-                                       <del>₹ 250.00</del>
-                                    </div><br>
-                                    <div class="featured-content-list">
-                                       <button type="button" data-name="Musical TV Toy" data-price="200" class="btn btn-style btn-style-secondary default-btn border-radius-5">Add to cart</button>
+                                       <span class="price">₹ 421.00 </span>
+                                       <del>₹ 495.00</del>              
                                     </div>
+                                    <div class="rating-heading">
+                                      <div class="rating-highlight">
+                                        <span>4&nbsp;<i class="fas fa-star"></i></span>
+                                       </div>
+                                        <p>&nbsp; (137)</p>
+                                      </div>
+                                      <div id="countdown">Limited time deal</div><br>
+                                      <p>FREE delivery<b> Fri, 10 Jan</b></p>
+                                      <p>Or fastest delivery<b> Tomorrow, 9 Jan</b></p>
+                                      <p>Ages: 2-10 years</p> 
+                                      <div class="featured-content-list">
+                                       <button type="button" data-name="Softsens Baby 3 Step Bath & Skin Combo | Baby Wash + Baby Shampoo + Baby Powder" data-price="421" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+                                    </div>               
                                  </div>
                               </div>
                            </div>
-                           <div class="col-lg-4 col-md-4 col-sm-4">
+                           <div class="col-lg-3 col-md-3 col-sm-3 part">
                               <div class="featured-item">
                                  <div class="featured-item-img">
                                        <div class="men-thumb-item text-center">
-                                         <img src="imgs/foot1.jpeg" alt="" class="img-fluid">
+                                         <img src="imgs/bathing/2.png" alt="" class="img-fluid">
                                          <div class="men-cart-pro">
                                            <div class="inner-men-cart-pro">
                                             <a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -1437,50 +1221,124 @@ RIGHT SIDEBAR TOGGLE SECTION
                                          </div>
                                        </div>
                                  </div>
-                                 <span class="product-new-top">New</span><br>
+                                 <span class="product-new-top">New</span>
+                                 <button type="submit" class="wishlist">
+                                  <svg width="25" height="23" viewBox="0 0 18 16">
+                                     <path
+                                       d="M9.01163699,14.9053769 C8.72930024,14.7740736 8.41492611,14.6176996 8.07646224,14.4366167 C7.06926649,13.897753 6.06198912,13.2561336 5.12636931,12.5170512 C2.52930452,10.4655288 1.00308384,8.09476443 1.00000218,5.44184117 C0.997549066,2.99198843 2.92175104,1.01242822 5.28303025,1.01000225 C6.41066623,1.00972036 7.49184369,1.4629765 8.28270844,2.2678673 L8.99827421,2.9961237 L9.71152148,2.26559643 C10.4995294,1.45849728 11.5791258,1.0023831 12.7071151,1.00000055 L12.7060299,1.00000225 C15.0693815,0.997574983 16.9967334,2.97018759 17.0000037,5.421337 C17.0038592,8.07662382 15.4809572,10.4530151 12.8850542,12.5121483 C11.9520963,13.2521931 10.9477036,13.8951276 9.94340074,14.4354976 C9.60619585,14.6169323 9.29297309,14.7736855 9.01163699,14.9053769 Z" stroke="#ff0000" stroke-width="1"/>
+                                      </svg>
+                                </button>
+                                <br>
                                  <div class="content">
-                                    <h6><a href="single.html">Princess Dress Sandals</a></h6>
+                                    <h6><a href="single.html">StarAndDaisy Baby Bath Tub for 0-3 Years/New Born Baby Foldable Bathtub</a></h6>
                                     <div class="content-in">
-                                       <span>₹ 230.00 </span>
-                                       <del>₹ 250.00</del>
-                                    </div><br>
-                                    <div class="featured-content-list">
-                                       <button type="button" data-name="Princess Dress Sandals" data-price="230.00" class="btn btn-style btn-style-secondary default-btn border-radius-5">Add to cart</button>
+                                       <span class="price">₹ 1,499.00 </span>
+                                       <del>₹ 2,799.00</del>                
                                     </div>
+                                    <div class="rating-heading">
+                                      <div class="rating-highlight">
+                                        <span>4.5&nbsp;<i class="fas fa-star-half"></i></span>
+                                       </div>
+                                        <p>&nbsp; (13)</p>
+                                      </div>
+                                      <p>FREE delivery<b> Fri, 10 Jan</b></p>
+                                      <p>Or fastest delivery<b> Tomorrow, 9 Jan</b></p>
+                                      <p>Ages: 2-10 years</p> 
+                                      <div class="featured-content-list">
+                                       <button type="button" data-name="StarAndDaisy Baby Bath Tub for 0-3 Years/New Born Baby Foldable Bathtub" data-price="1499" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+                                    </div> 
                                  </div>
                               </div>
                            </div>
-                           <div class="col-lg-4 col-md-4 col-sm-4">
+                           <div class="col-lg-3 col-md-3 col-sm-3 part">
                               <div class="featured-item">
                                  <div class="featured-item-img">
                                        <div class="men-thumb-item text-center">
-                                         <img src="imgs/dress1.jpg" alt="" class="img-fluid">
+                                         <img src="imgs/bathing/3.png" alt="" class="img-fluid">
                                          <div class="men-cart-pro">
                                            <div class="inner-men-cart-pro">
                                             <a href="single.html" class="link-product-add-cart">Quick View</a>
                                            </div>
                                          </div>
                                        </div>
-                                 </div><br>
+                                 </div>
+                                 <button type="submit" class="wishlist">
+                                  <svg width="25" height="23" viewBox="0 0 18 16">
+                                     <path
+                                       d="M9.01163699,14.9053769 C8.72930024,14.7740736 8.41492611,14.6176996 8.07646224,14.4366167 C7.06926649,13.897753 6.06198912,13.2561336 5.12636931,12.5170512 C2.52930452,10.4655288 1.00308384,8.09476443 1.00000218,5.44184117 C0.997549066,2.99198843 2.92175104,1.01242822 5.28303025,1.01000225 C6.41066623,1.00972036 7.49184369,1.4629765 8.28270844,2.2678673 L8.99827421,2.9961237 L9.71152148,2.26559643 C10.4995294,1.45849728 11.5791258,1.0023831 12.7071151,1.00000055 L12.7060299,1.00000225 C15.0693815,0.997574983 16.9967334,2.97018759 17.0000037,5.421337 C17.0038592,8.07662382 15.4809572,10.4530151 12.8850542,12.5121483 C11.9520963,13.2521931 10.9477036,13.8951276 9.94340074,14.4354976 C9.60619585,14.6169323 9.29297309,14.7736855 9.01163699,14.9053769 Z" stroke="#ff0000" stroke-width="1"/>
+                                      </svg>
+                                </button><br>
                                  <div class="content">
-                                    <h6><a href="single.html">Cotton-Blend Denim</a></h6>
+                                    <h6><a href="single.html">StarAndDaisy Bath Tub for Baby 0-3 Years/Foldable Bathtub for Kids with Cushion</a></h6>
                                     <div class="content-in">
-                                       <span>₹ 280.00 </span>
-                                       <del>₹ 300.00</del>
-                                    </div><br>
-                                    <div class="featured-content-list">
-                                       <button type="button" data-name="Cotton-Blend Denim" data-price="280.00" class="btn btn-style btn-style-secondary default-btn border-radius-5">Add to cart</button>
-                                    </div>
+                                       <span class="price">₹ 1,496.00 </span>
+                                       <del>₹ 2,099.00</del>
+                                    </div><div class="rating-heading">
+                                      <div class="rating-highlight">
+                                        <span>4&nbsp;<i class="fas fa-star"></i></span>
+                                       </div>
+                                        <p>&nbsp; (17)</p>
+                                      </div>
+                                      <div id="countdown">Ends in
+                                        <span id="hours"></span>:
+                                        <span id="minutes"></span>:
+                                        <span id="seconds"></span>
+                                      </div><br>
+                                      <p>FREE delivery<b> Fri, 10 Jan</b></p>
+                                      <p>Or fastest delivery<b> Tomorrow, 9 Jan</b></p>
+                                      <p>Ages: 2-15 years</p> 
+                                      <div class="featured-content-list">
+                                       <button type="button" data-name="StarAndDaisy Bath Tub for Baby 0-3 Years/Foldable Bathtub for Kids with Cushion" data-price="1496" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+                                    </div> 
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-3 col-sm-3 part">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                       <div class="men-thumb-item text-center">
+                                         <img src="imgs/bathing/15.png" alt="" class="img-fluid">
+                                         <div class="men-cart-pro">
+                                           <div class="inner-men-cart-pro">
+                                            <a href="single.html" class="link-product-add-cart">Quick View</a>
+                                           </div>
+                                         </div>
+                                       </div>
+                                 </div>
+                                 <mark class="choice">Kidzera's<span>&nbsp; Choice</span></mark>
+                                 <button type="submit" class="wishlist">
+                                  <svg width="25" height="23" viewBox="0 0 18 16">
+                                     <path
+                                       d="M9.01163699,14.9053769 C8.72930024,14.7740736 8.41492611,14.6176996 8.07646224,14.4366167 C7.06926649,13.897753 6.06198912,13.2561336 5.12636931,12.5170512 C2.52930452,10.4655288 1.00308384,8.09476443 1.00000218,5.44184117 C0.997549066,2.99198843 2.92175104,1.01242822 5.28303025,1.01000225 C6.41066623,1.00972036 7.49184369,1.4629765 8.28270844,2.2678673 L8.99827421,2.9961237 L9.71152148,2.26559643 C10.4995294,1.45849728 11.5791258,1.0023831 12.7071151,1.00000055 L12.7060299,1.00000225 C15.0693815,0.997574983 16.9967334,2.97018759 17.0000037,5.421337 C17.0038592,8.07662382 15.4809572,10.4530151 12.8850542,12.5121483 C11.9520963,13.2521931 10.9477036,13.8951276 9.94340074,14.4354976 C9.60619585,14.6169323 9.29297309,14.7736855 9.01163699,14.9053769 Z" stroke="#ff0000" stroke-width="1"/>
+                                      </svg>
+                                </button><br>
+                                 <div class="content">
+                                    <h6><a href="single.html">StarAndDaisy Foldable Baby Bath Tub for 0-5 Years, Collapsible Design Space</a></h6>
+                                    <div class="content-in">
+                                       <span class="price">₹ 2,886.00 </span>
+                                       <del>₹ 7,999.00</del>
+                                    </div><div class="rating-heading">
+                                      <div class="rating-highlight">
+                                        <span>4&nbsp;<i class="fas fa-star"></i></span>
+                                       </div>
+                                        <p>&nbsp; (137)</p>
+                                      </div><br>
+                                      <p>FREE delivery<b> Fri, 10 Jan</b></p>
+                                      <p>Or fastest delivery<b> Tomorrow, 9 Jan</b></p>
+                                      <p>Ages: 2-10 years</p> 
+                                      <div class="featured-content-list">
+                                       <button type="button" data-name="StarAndDaisy Foldable Baby Bath Tub for 0-5 Years, Collapsible Design Space" data-price="2886" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+                                    </div> 
                                  </div>
                               </div>
                            </div>                           
-                        </div>
+                        </div><br><br>
                         <div class="row">
-                           <div class="col-lg-4 col-md-4 col-sm-4">
+                           <div class="col-lg-3 col-md-3 col-sm-3 part">
                               <div class="featured-item">
                                  <div class="featured-item-img">
                                        <div class="men-thumb-item text-center">
-                                         <img src="imgs/toy2.jpg" alt="" class="img-fluid">
+                                         <img src="imgs/bathing/4.png" alt="" class="img-fluid">
                                          <div class="men-cart-pro">
                                            <div class="inner-men-cart-pro">
                                             <a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -1488,24 +1346,38 @@ RIGHT SIDEBAR TOGGLE SECTION
                                          </div>
                                        </div>
                                  </div>
-                                 <span class="product-new-top">New</span><br>
+                                 <span class="product-new-top">New</span>
+                                 <button type="submit" class="wishlist">
+                                  <svg width="25" height="23" viewBox="0 0 18 16">
+                                     <path
+                                       d="M9.01163699,14.9053769 C8.72930024,14.7740736 8.41492611,14.6176996 8.07646224,14.4366167 C7.06926649,13.897753 6.06198912,13.2561336 5.12636931,12.5170512 C2.52930452,10.4655288 1.00308384,8.09476443 1.00000218,5.44184117 C0.997549066,2.99198843 2.92175104,1.01242822 5.28303025,1.01000225 C6.41066623,1.00972036 7.49184369,1.4629765 8.28270844,2.2678673 L8.99827421,2.9961237 L9.71152148,2.26559643 C10.4995294,1.45849728 11.5791258,1.0023831 12.7071151,1.00000055 L12.7060299,1.00000225 C15.0693815,0.997574983 16.9967334,2.97018759 17.0000037,5.421337 C17.0038592,8.07662382 15.4809572,10.4530151 12.8850542,12.5121483 C11.9520963,13.2521931 10.9477036,13.8951276 9.94340074,14.4354976 C9.60619585,14.6169323 9.29297309,14.7736855 9.01163699,14.9053769 Z" stroke="#ff0000" stroke-width="1"/>
+                                      </svg>
+                                </button><br>
                                  <div class="content">
-                                    <h6><a href="single.html">Plugo STEM Pack</a></h6>
+                                    <h6><a href="single.html">Storio Baby Products Bath Toys Suction Cup Spinner Toy | Set of 3 | for Baby Boys Girls | Pop up Waterproof Suction Cup</a></h6>
                                     <div class="content-in">
-                                       <span>₹ 320.00 </span>
-                                       <del>₹ 340.00</del>
-                                    </div><br>
-                                    <div class="featured-content-list">
-                                       <button type="button" data-name="Plugo STEM Pack" data-price="320" class="btn btn-style btn-style-secondary default-btn border-radius-5">Add to cart</button>
-                                    </div>
+                                       <span class="price">₹ 599.00 </span>
+                                       <del>₹ 1,339.00</del>
+                                    </div><div class="rating-heading">
+                                      <div class="rating-highlight">
+                                        <span>2&nbsp;<i class="fas fa-star"></i></span>
+                                       </div>
+                                        <p>&nbsp; (5)</p>
+                                      </div><br>
+                                      <p>FREE delivery<b> Fri, 10 Jan</b></p>
+                                      <p>Or fastest delivery<b> Tomorrow, 9 Jan</b></p>
+                                      <p>Ages: 2-10 years</p> 
+                                      <div class="featured-content-list">
+                                       <button type="button" data-name="Storio Baby Products Bath Toys Suction Cup Spinner Toy | Set of 3 | for Baby Boys Girls | Pop up Waterproof Suction Cup" data-price="599" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+                                    </div> 
                                  </div>
                               </div>
                            </div>
-                           <div class="col-lg-4 col-md-4 col-sm-4">
+                           <div class="col-lg-3 col-md-3 col-sm-3 part">
                               <div class="featured-item">
                                  <div class="featured-item-img">
                                        <div class="men-thumb-item text-center">
-                                         <img src="imgs/foot2.jpg" alt="" class="img-fluid">
+                                         <img src="imgs/bathing/5.png" alt="" class="img-fluid">
                                          <div class="men-cart-pro">
                                            <div class="inner-men-cart-pro">
                                             <a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -1513,74 +1385,157 @@ RIGHT SIDEBAR TOGGLE SECTION
                                          </div>
                                        </div>
                                  </div>
-                                 <span class="product-new-top">New</span><br>
+
+                                <mark class="choice">Kidzera's<span>&nbsp; Choice</span></mark>
+                                <button type="submit" class="wishlist">
+                                  <svg width="25" height="23" viewBox="0 0 18 16">
+                                     <path
+                                       d="M9.01163699,14.9053769 C8.72930024,14.7740736 8.41492611,14.6176996 8.07646224,14.4366167 C7.06926649,13.897753 6.06198912,13.2561336 5.12636931,12.5170512 C2.52930452,10.4655288 1.00308384,8.09476443 1.00000218,5.44184117 C0.997549066,2.99198843 2.92175104,1.01242822 5.28303025,1.01000225 C6.41066623,1.00972036 7.49184369,1.4629765 8.28270844,2.2678673 L8.99827421,2.9961237 L9.71152148,2.26559643 C10.4995294,1.45849728 11.5791258,1.0023831 12.7071151,1.00000055 L12.7060299,1.00000225 C15.0693815,0.997574983 16.9967334,2.97018759 17.0000037,5.421337 C17.0038592,8.07662382 15.4809572,10.4530151 12.8850542,12.5121483 C11.9520963,13.2521931 10.9477036,13.8951276 9.94340074,14.4354976 C9.60619585,14.6169323 9.29297309,14.7736855 9.01163699,14.9053769 Z" stroke="#ff0000" stroke-width="1"/>
+                                      </svg>
+                                </button><br>
                                  <div class="content">
-                                    <h6><a href="single.html">Sweetheart Light Shoes</a></h6>
+                                    <h6><a href="single.html">MOM CARE Muslin Baby Bath Towel Cotton Super Soft Bathing Towels</a></h6>
                                     <div class="content-in">
-                                       <span>₹ 349.00 </span>
-                                       <del>₹ 399.00</del>
-                                    </div><br>
-                                    <div class="featured-content-list">
-                                       <button type="button" data-name="Sweetheart Light Shoes" data-price="349.00" class="btn btn-style btn-style-secondary default-btn border-radius-5">Add to cart</button>
-                                    </div>
+                                       <span class="price">₹ 497.00 </span>
+                                       <del>₹ 1,200.00</del>
+                                    </div><div class="rating-heading">
+                                      <div class="rating-highlight">
+                                        <span>4&nbsp;<i class="fas fa-star"></i></span>
+                                       </div>
+                                        <p>&nbsp; (137)</p>
+                                      </div>
+                                      <p>FREE delivery<b> Fri, 10 Jan</b></p>
+                                      <p>Or fastest delivery<b> Tomorrow, 9 Jan</b></p>
+                                      <p>Ages: 2-10 years</p> 
+                                      <div class="featured-content-list">
+                                       <button type="button" data-name="MOM CARE Muslin Baby Bath Towel Cotton Super Soft Bathing Towels" data-price="497" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+                                    </div> 
                                  </div>
                               </div>
                            </div>
-                           <div class="col-lg-4 col-md-4 col-sm-4">
+                           <div class="col-lg-3 col-md-3 col-sm-3 part">
                               <div class="featured-item">
                                  <div class="featured-item-img">
                                        <div class="men-thumb-item text-center">
-                                         <img src="imgs/dress2.jpeg" alt="" class="img-fluid">
+                                         <img src="imgs/bathing/6.png" alt="" class="img-fluid">
                                          <div class="men-cart-pro">
                                            <div class="inner-men-cart-pro">
                                             <a href="single.html" class="link-product-add-cart">Quick View</a>
                                            </div>
                                          </div>
                                        </div>
-                                 </div><br>
+                                 </div>
+                                 <button type="submit" class="wishlist">
+                                  <svg width="25" height="23" viewBox="0 0 18 16">
+                                     <path
+                                       d="M9.01163699,14.9053769 C8.72930024,14.7740736 8.41492611,14.6176996 8.07646224,14.4366167 C7.06926649,13.897753 6.06198912,13.2561336 5.12636931,12.5170512 C2.52930452,10.4655288 1.00308384,8.09476443 1.00000218,5.44184117 C0.997549066,2.99198843 2.92175104,1.01242822 5.28303025,1.01000225 C6.41066623,1.00972036 7.49184369,1.4629765 8.28270844,2.2678673 L8.99827421,2.9961237 L9.71152148,2.26559643 C10.4995294,1.45849728 11.5791258,1.0023831 12.7071151,1.00000055 L12.7060299,1.00000225 C15.0693815,0.997574983 16.9967334,2.97018759 17.0000037,5.421337 C17.0038592,8.07662382 15.4809572,10.4530151 12.8850542,12.5121483 C11.9520963,13.2521931 10.9477036,13.8951276 9.94340074,14.4354976 C9.60619585,14.6169323 9.29297309,14.7736855 9.01163699,14.9053769 Z" stroke="#ff0000" stroke-width="1"/>
+                                      </svg>
+                                </button><br>
                                  <div class="content">
-                                    <h6><a href="single.html">Boys Regular Fit Jacket</a></h6>
+                                    <h6><a href="single.html">babygoal Baby Swimsuits with Swim Diaper 2-Piece for Infant Toddler Boy Girl, Bathing Suit with Top Set for Swimming</a></h6>
                                     <div class="content-in">
-                                       <span>₹ 249.00 </span>
-                                       <del>₹ 300.00</del>
-                                    </div><br>
-                                    <div class="featured-content-list">
-                                       <button type="button" data-name="Boys Regular Fit Jacket" data-price="249.00" class="btn btn-style btn-style-secondary default-btn border-radius-5">Add to cart</button>
-                                    </div>
+                                       <span class="price">₹ 989.00 </span>
+                                       <del>₹ 1,484.00</del>
+                                    </div><div class="rating-heading">
+                                      <div class="rating-highlight">
+                                        <span>4&nbsp;<i class="fas fa-star"></i></span>
+                                       </div>
+                                        <p>&nbsp; (137)</p>
+                                      </div>
+                                      <p>FREE delivery<b> Fri, 10 Jan</b></p>
+                                      <p>Or fastest delivery<b> Tomorrow, 9 Jan</b></p>
+                                      <p>Ages: 2-10 years</p> 
+                                      <div class="featured-content-list">
+                                       <button type="button" data-name="babygoal Baby Swimsuits with Swim Diaper 2-Piece for Infant Toddler Boy Girl, Bathing Suit with Top Set for Swimming" data-price="989" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+                                    </div> 
                                  </div>
                               </div>
-                           </div>                           
-                        </div>
+                           </div> 
+                        <div class="col-lg-3 col-md-3 col-sm-3 part">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                       <div class="men-thumb-item text-center">
+                                         <img src="imgs/bathing/14.png" alt="" class="img-fluid">
+                                         <div class="men-cart-pro">
+                                           <div class="inner-men-cart-pro">
+                                            <a href="single.html" class="link-product-add-cart">Quick View</a>
+                                           </div>
+                                         </div>
+                                       </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                                 <button type="submit" class="wishlist">
+                                  <svg width="25" height="23" viewBox="0 0 18 16">
+                                     <path
+                                       d="M9.01163699,14.9053769 C8.72930024,14.7740736 8.41492611,14.6176996 8.07646224,14.4366167 C7.06926649,13.897753 6.06198912,13.2561336 5.12636931,12.5170512 C2.52930452,10.4655288 1.00308384,8.09476443 1.00000218,5.44184117 C0.997549066,2.99198843 2.92175104,1.01242822 5.28303025,1.01000225 C6.41066623,1.00972036 7.49184369,1.4629765 8.28270844,2.2678673 L8.99827421,2.9961237 L9.71152148,2.26559643 C10.4995294,1.45849728 11.5791258,1.0023831 12.7071151,1.00000055 L12.7060299,1.00000225 C15.0693815,0.997574983 16.9967334,2.97018759 17.0000037,5.421337 C17.0038592,8.07662382 15.4809572,10.4530151 12.8850542,12.5121483 C11.9520963,13.2521931 10.9477036,13.8951276 9.94340074,14.4354976 C9.60619585,14.6169323 9.29297309,14.7736855 9.01163699,14.9053769 Z" stroke="#ff0000" stroke-width="1"/>
+                                      </svg>
+                                </button><br>
+                                 <div class="content">
+                                    <h6><a href="single.html">Best Bathing Pool Toys Cute Swimming Bath Toy Wind Up Swimming Boat Bath Toys for Toddlers Babies Boys and Girls</a></h6>
+                                    <div class="content-in">
+                                       <span class="price">₹ 299.00 </span>
+                                       <del>₹ 499.00</del>
+                                    </div><div class="rating-heading">
+                                      <div class="rating-highlight">
+                                        <span>4&nbsp;<i class="fas fa-star"></i></span>
+                                       </div>
+                                        <p>&nbsp; (137)</p>
+                                      </div><br>
+                                      <p>FREE delivery<b> Fri, 10 Jan</b></p>
+                                      <p>Or fastest delivery<b> Tomorrow, 9 Jan</b></p>
+                                      <p>Ages: 2-10 years</p> 
+                                      <div class="featured-content-list">
+                                       <button type="button" data-name="Best Bathing Pool Toys Cute Swimming Bath Toy Wind Up Swimming Boat Bath Toys for Toddlers Babies Boys and Girls" data-price="299" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+                                    </div> 
+                                 </div>
+                              </div>
+                              </div>
+                           </div><br><br>
                         <div class="row">
-                           <div class="col-lg-4 col-md-4 col-sm-4">
+                           <div class="col-lg-3 col-md-3 col-sm-3 part">
                               <div class="featured-item">
                                  <div class="featured-item-img">
                                        <div class="men-thumb-item text-center">
-                                         <img src="imgs/foot3.jpg" alt="" class="img-fluid">
+                                         <img src="imgs/bathing/7.png" alt="" class="img-fluid">
                                          <div class="men-cart-pro">
                                            <div class="inner-men-cart-pro">
                                             <a href="single.html" class="link-product-add-cart">Quick View</a>
                                            </div>
                                          </div>
                                        </div>
-                                 </div><br>
+                                 </div>
+                                <span class="mark">Best Seller</span>
+                                <button type="submit" class="wishlist">
+                                  <svg width="25" height="23" viewBox="0 0 18 16">
+                                     <path
+                                       d="M9.01163699,14.9053769 C8.72930024,14.7740736 8.41492611,14.6176996 8.07646224,14.4366167 C7.06926649,13.897753 6.06198912,13.2561336 5.12636931,12.5170512 C2.52930452,10.4655288 1.00308384,8.09476443 1.00000218,5.44184117 C0.997549066,2.99198843 2.92175104,1.01242822 5.28303025,1.01000225 C6.41066623,1.00972036 7.49184369,1.4629765 8.28270844,2.2678673 L8.99827421,2.9961237 L9.71152148,2.26559643 C10.4995294,1.45849728 11.5791258,1.0023831 12.7071151,1.00000055 L12.7060299,1.00000225 C15.0693815,0.997574983 16.9967334,2.97018759 17.0000037,5.421337 C17.0038592,8.07662382 15.4809572,10.4530151 12.8850542,12.5121483 C11.9520963,13.2521931 10.9477036,13.8951276 9.94340074,14.4354976 C9.60619585,14.6169323 9.29297309,14.7736855 9.01163699,14.9053769 Z" stroke="#ff0000" stroke-width="1"/>
+                                      </svg>
+                                </button><br>
                                  <div class="content">
-                                    <h6><a href="single.html">Soft Sole Printed Flip-Flops</a></h6>
+                                    <h6><a href="single.html">XSOURCE Baby Shower Cap, Bath Visor hat for Eye and Ear wash Protection Waterproof</a></h6>
                                     <div class="content-in">
-                                       <span>₹ 230.00 </span>
-                                       <del>₹ 280.00</del>
-                                    </div><br>
-                                    <div class="featured-content-list">
-                                       <button type="button" data-name="Soft Sole Printed Flip-Flops" data-price="230" class="btn btn-style btn-style-secondary default-btn border-radius-5">Add to cart</button>
-                                    </div>
+                                       <span class="price">₹ 248.00 </span>
+                                       <del>₹ 999.00</del>
+                                    </div><div class="rating-heading">
+                                      <div class="rating-highlight">
+                                        <span>4&nbsp;<i class="fas fa-star"></i></span>
+                                       </div>
+                                        <p>&nbsp; (137)</p>
+                                      </div><br>
+                                      <p>FREE delivery<b> Fri, 10 Jan</b></p>
+                                      <p>Or fastest delivery<b> Tomorrow, 9 Jan</b></p>
+                                      <p>Ages: 2-10 years</p> 
+                                      <div class="featured-content-list">
+                                       <button type="button" data-name="XSOURCE Baby Shower Cap, Bath Visor hat for Eye and Ear wash Protection Waterproof" data-price="248" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+                                    </div> 
                                  </div>
                               </div>
                            </div>
-                           <div class="col-lg-4 col-md-4 col-sm-4">
+                           <div class="col-lg-3 col-md-3 col-sm-3 part">
                               <div class="featured-item">
                                  <div class="featured-item-img">
                                        <div class="men-thumb-item text-center">
-                                         <img src="imgs/dress3.jpg" alt="" class="img-fluid">
+                                         <img src="imgs/bathing/8.png" alt="" class="img-fluid">
                                          <div class="men-cart-pro">
                                            <div class="inner-men-cart-pro">
                                             <a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -1588,133 +1543,251 @@ RIGHT SIDEBAR TOGGLE SECTION
                                          </div>
                                        </div>
                                  </div>
-                                 <span class="product-new-top">New</span><br>
+                                 <span class="product-new-top">New</span>
+                                 <button type="submit" class="wishlist">
+                                  <svg width="25" height="23" viewBox="0 0 18 16">
+                                     <path
+                                       d="M9.01163699,14.9053769 C8.72930024,14.7740736 8.41492611,14.6176996 8.07646224,14.4366167 C7.06926649,13.897753 6.06198912,13.2561336 5.12636931,12.5170512 C2.52930452,10.4655288 1.00308384,8.09476443 1.00000218,5.44184117 C0.997549066,2.99198843 2.92175104,1.01242822 5.28303025,1.01000225 C6.41066623,1.00972036 7.49184369,1.4629765 8.28270844,2.2678673 L8.99827421,2.9961237 L9.71152148,2.26559643 C10.4995294,1.45849728 11.5791258,1.0023831 12.7071151,1.00000055 L12.7060299,1.00000225 C15.0693815,0.997574983 16.9967334,2.97018759 17.0000037,5.421337 C17.0038592,8.07662382 15.4809572,10.4530151 12.8850542,12.5121483 C11.9520963,13.2521931 10.9477036,13.8951276 9.94340074,14.4354976 C9.60619585,14.6169323 9.29297309,14.7736855 9.01163699,14.9053769 Z" stroke="#ff0000" stroke-width="1"/>
+                                      </svg>
+                                </button><br>
                                  <div class="content">
-                                    <h6><a href="single.html">Pink Jumpsuit for Kids</a></h6>
+                                    <h6><a href="single.html">Mother Sparsh Kids & Baby Hydrating Bubble Bath and Wash-300ml | Body Wash</a></h6>
                                     <div class="content-in">
-                                       <span>₹ 180.00 </span>
-                                       <del>₹ 200.00</del>
-                                    </div><br>
-                                    <div class="featured-content-list">
-                                       <button type="button" data-name="Pink Jumpsuit for Kids" data-price="180.00" class="btn btn-style btn-style-secondary default-btn border-radius-5">Add to cart</button>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-4 col-md-4 col-sm-4">
-                              <div class="featured-item">
-                                 <div class="featured-item-img">
-                                       <div class="men-thumb-item text-center">
-                                         <img src="imgs/toy4.jpg" alt="" class="img-fluid">
-                                         <div class="men-cart-pro">
-                                           <div class="inner-men-cart-pro">
-                                            <a href="single.html" class="link-product-add-cart">Quick View</a>
-                                           </div>
-                                         </div>
-                                       </div>
-                                 </div><br>
-                                 <div class="content">
-                                    <h6><a href="single.html">LEGO Creative Calender</a></h6>
-                                    <div class="content-in">
-                                       <span>₹ 199.00 </span>
-                                       <del>₹ 299.00</del>
-                                    </div><br>
-                                    <div class="featured-content-list">
-                                       <button type="button" data-name="LEGO Creative Calender" data-price="199.00" class="btn btn-style btn-style-secondary default-btn border-radius-5">Add to cart</button>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>                           
-                        </div>
-                        <div class="row">
-                           <div class="col-lg-4 col-md-4 col-sm-4">
-                              <div class="featured-item">
-                                 <div class="featured-item-img">
-                                       <div class="men-thumb-item text-center">
-                                         <img src="imgs/dress4.jpg" alt="" class="img-fluid">
-                                         <div class="men-cart-pro">
-                                           <div class="inner-men-cart-pro">
-                                            <a href="single.html" class="link-product-add-cart">Quick View</a>
-                                           </div>
-                                         </div>
-                                       </div>
-                                 </div>
-                                 <span class="product-new-top">New</span><br>
-                                 <div class="content">
-                                    <h6><a href="single.html">Denim Floral Jacket</a></h6>
-                                    <div class="content-in">
-                                       <span>₹ 499.00 </span>
-                                       <del>₹ 599.00</del>
-                                    </div><br>
-                                    <div class="featured-content-list">
-                                       <button type="button" data-name="Denim Floral Jacket" data-price="499" class="btn btn-style btn-style-secondary default-btn border-radius-5">Add to cart</button>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-4 col-md-4 col-sm-4">
-                              <div class="featured-item">
-                                 <div class="featured-item-img">
-                                       <div class="men-thumb-item text-center">
-                                         <img src="imgs/toy3.jpg" alt="" class="img-fluid">
-                                         <div class="men-cart-pro">
-                                           <div class="inner-men-cart-pro">
-                                            <a href="single.html" class="link-product-add-cart">Quick View</a>
-                                           </div>
-                                         </div>
-                                       </div>
-                                 </div>
-                                 <span class="product-new-top">New</span><br>
-                                 <div class="content">
-                                    <h6><a href="single.html">Wooden Helicopter Toy</a></h6>
-                                    <div class="content-in">
-                                       <span>₹ 599.00 </span>
+                                       <span class="price">₹ 399.00 </span>
                                        <del>₹ 699.00</del>
-                                    </div><br>
-                                    <div class="featured-content-list">
-                                       <button type="button" data-name="Wooden Helicopter Toy" data-price="599.00" class="btn btn-style btn-style-secondary default-btn border-radius-5">Add to cart</button>
-                                    </div>
+                                    </div><div class="rating-heading">
+                                      <div class="rating-highlight">
+                                        <span>4&nbsp;<i class="fas fa-star"></i></span>
+                                       </div>
+                                        <p>&nbsp; (137)</p>
+                                      </div><br>
+                                      <div id="countdown">Limite time deal</div><br>
+                                      <p>FREE delivery<b> Fri, 10 Jan</b></p>
+                                      <p>Or fastest delivery<b> Tomorrow, 9 Jan</b></p>
+                                      <p>Ages: 2-10 years</p> 
+                                      <div class="featured-content-list">
+                                       <button type="button" data-name="Mother Sparsh Kids & Baby Hydrating Bubble Bath and Wash-300ml | Body Wash" data-price="399" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+                                    </div> 
                                  </div>
                               </div>
                            </div>
-                           <div class="col-lg-4 col-md-4 col-sm-4">
+                           <div class="col-lg-3 col-md-3 col-sm-3 part">
                               <div class="featured-item">
                                  <div class="featured-item-img">
                                        <div class="men-thumb-item text-center">
-                                         <img src="imgs/toy3.jpg" alt="" class="img-fluid">
+                                         <img src="imgs/bathing/9.png" alt="" class="img-fluid">
                                          <div class="men-cart-pro">
                                            <div class="inner-men-cart-pro">
                                             <a href="single.html" class="link-product-add-cart">Quick View</a>
                                            </div>
                                          </div>
                                        </div>
-                                 </div><br>
+                                 </div>
+                                <span class="mark">Best Seller</span>
+                                <button type="submit" class="wishlist">
+                                  <svg width="25" height="23" viewBox="0 0 18 16">
+                                     <path
+                                       d="M9.01163699,14.9053769 C8.72930024,14.7740736 8.41492611,14.6176996 8.07646224,14.4366167 C7.06926649,13.897753 6.06198912,13.2561336 5.12636931,12.5170512 C2.52930452,10.4655288 1.00308384,8.09476443 1.00000218,5.44184117 C0.997549066,2.99198843 2.92175104,1.01242822 5.28303025,1.01000225 C6.41066623,1.00972036 7.49184369,1.4629765 8.28270844,2.2678673 L8.99827421,2.9961237 L9.71152148,2.26559643 C10.4995294,1.45849728 11.5791258,1.0023831 12.7071151,1.00000055 L12.7060299,1.00000225 C15.0693815,0.997574983 16.9967334,2.97018759 17.0000037,5.421337 C17.0038592,8.07662382 15.4809572,10.4530151 12.8850542,12.5121483 C11.9520963,13.2521931 10.9477036,13.8951276 9.94340074,14.4354976 C9.60619585,14.6169323 9.29297309,14.7736855 9.01163699,14.9053769 Z" stroke="#ff0000" stroke-width="1"/>
+                                      </svg>
+                                </button><br>
                                  <div class="content">
-                                    <h6><a href="single.html">Wooden Helicopter Toy</a></h6>
+                                    <h6><a href="single.html">INOVERA Adjustable Baby Shower Cap Shield | Hair Washing Hat | Bathing Crown</a></h6>
                                     <div class="content-in">
-                                       <span>₹ 599.00 </span>
-                                       <del>₹ 699.00</del>
-                                    </div><br>
-                                    <div class="featured-content-list">
-                                       <button type="button" data-name="Wooden Helicopter Toy" data-price="599.00" class="btn btn-style btn-style-secondary default-btn border-radius-5">Add to cart</button>
+                                       <span class="price">₹ 199.00 </span>
+                                       <del>₹ 899.00</del>
+                                    </div><div class="rating-heading">
+                                      <div class="rating-highlight">
+                                        <span>4&nbsp;<i class="fas fa-star"></i></span>
+                                       </div>
+                                        <p>&nbsp; (137)</p>
+                                      </div>
+                                      <p>FREE delivery<b> Fri, 10 Jan</b></p>
+                                      <p>Or fastest delivery<b> Tomorrow, 9 Jan</b></p>
+                                      <p>Ages: 2-10 years</p> 
+                                      <div class="featured-content-list">
+                                       <button type="button" data-name="INOVERA Adjustable Baby Shower Cap Shield | Hair Washing Hat | Bathing Crown" data-price="199" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+                                    </div> 
                                     </div>
                                  </div>
                               </div>
+                              <div class="col-lg-3 col-md-3 col-sm-3 part">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                       <div class="men-thumb-item text-center">
+                                         <img src="imgs/bathing/13.png" alt="" class="img-fluid">
+                                         <div class="men-cart-pro">
+                                           <div class="inner-men-cart-pro">
+                                            <a href="single.html" class="link-product-add-cart">Quick View</a>
+                                           </div>
+                                         </div>
+                                       </div>
+                                 </div>
+                                 <button type="submit" class="wishlist">
+                                  <svg width="25" height="23" viewBox="0 0 18 16">
+                                     <path
+                                       d="M9.01163699,14.9053769 C8.72930024,14.7740736 8.41492611,14.6176996 8.07646224,14.4366167 C7.06926649,13.897753 6.06198912,13.2561336 5.12636931,12.5170512 C2.52930452,10.4655288 1.00308384,8.09476443 1.00000218,5.44184117 C0.997549066,2.99198843 2.92175104,1.01242822 5.28303025,1.01000225 C6.41066623,1.00972036 7.49184369,1.4629765 8.28270844,2.2678673 L8.99827421,2.9961237 L9.71152148,2.26559643 C10.4995294,1.45849728 11.5791258,1.0023831 12.7071151,1.00000055 L12.7060299,1.00000225 C15.0693815,0.997574983 16.9967334,2.97018759 17.0000037,5.421337 C17.0038592,8.07662382 15.4809572,10.4530151 12.8850542,12.5121483 C11.9520963,13.2521931 10.9477036,13.8951276 9.94340074,14.4354976 C9.60619585,14.6169323 9.29297309,14.7736855 9.01163699,14.9053769 Z" stroke="#ff0000" stroke-width="1"/>
+                                      </svg>
+                                </button><br>
+                                 <div class="content">
+                                    <h6><a href="single.html">Toy Imagine� Swimming Pool for Kids 5.5 Feet (65 X 39 X 10H) | Swimming Pool for Kids 1 to 5 Years Below</a></h6>
+                                    <div class="content-in">
+                                       <span class="price">₹ 1,099.00 </span>
+                                       <del>₹ 1,659.00</del>
+                                    </div><div class="rating-heading">
+                                      <div class="rating-highlight">
+                                        <span>4&nbsp;<i class="fas fa-star"></i></span>
+                                       </div>
+                                        <p>&nbsp; (137)</p>
+                                      </div>
+                                      <p>FREE delivery<b> Fri, 10 Jan</b></p>
+                                      <p>Or fastest delivery<b> Tomorrow, 9 Jan</b></p>
+                                      <p>Ages: 2-10 years</p> 
+                                      <div class="featured-content-list">
+                                       <button type="button" data-name="Toy Imagine� Swimming Pool for Kids 5.5 Feet (65 X 39 X 10H) | Swimming Pool for Kids 1 to 5 Years Below" data-price="1099" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+                                    </div> 
+                                 </div>
+                              </div>
+                           </div>
                            </div>                           
+                        </div>
+                        <div class="row">
+                           <div class="col-lg-3 col-md-3 col-sm-3 part">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                       <div class="men-thumb-item text-center">
+                                         <img src="imgs/bathing/10.png" alt="" class="img-fluid">
+                                         <div class="men-cart-pro">
+                                           <div class="inner-men-cart-pro">
+                                            <a href="single.html" class="link-product-add-cart">Quick View</a>
+                                           </div>
+                                         </div>
+                                       </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                                 <button type="submit" class="wishlist">
+                                  <svg width="25" height="23" viewBox="0 0 18 16">
+                                     <path
+                                       d="M9.01163699,14.9053769 C8.72930024,14.7740736 8.41492611,14.6176996 8.07646224,14.4366167 C7.06926649,13.897753 6.06198912,13.2561336 5.12636931,12.5170512 C2.52930452,10.4655288 1.00308384,8.09476443 1.00000218,5.44184117 C0.997549066,2.99198843 2.92175104,1.01242822 5.28303025,1.01000225 C6.41066623,1.00972036 7.49184369,1.4629765 8.28270844,2.2678673 L8.99827421,2.9961237 L9.71152148,2.26559643 C10.4995294,1.45849728 11.5791258,1.0023831 12.7071151,1.00000055 L12.7060299,1.00000225 C15.0693815,0.997574983 16.9967334,2.97018759 17.0000037,5.421337 C17.0038592,8.07662382 15.4809572,10.4530151 12.8850542,12.5121483 C11.9520963,13.2521931 10.9477036,13.8951276 9.94340074,14.4354976 C9.60619585,14.6169323 9.29297309,14.7736855 9.01163699,14.9053769 Z" stroke="#ff0000" stroke-width="1"/>
+                                      </svg>
+                                </button><br>
+                                 <div class="content">
+                                    <h6><a href="single.html">MOM CARE Cotton Microfibre Bath Towels for Kids -Extra Soft/Quick Dry/Strong Water Absorbent/Bathing Towel</a></h6>
+                                    <div class="content-in">
+                                       <span class="price">₹ 599.00 </span>
+                                       <del>₹ 800.00</del>
+                                    </div><div class="rating-heading">
+                                      <div class="rating-highlight">
+                                        <span>4&nbsp;<i class="fas fa-star"></i></span>
+                                       </div>
+                                        <p>&nbsp; (137)</p>
+                                      </div><br>
+                                      <div id="countdown">Limited time deal</div><br>
+                                      <p>FREE delivery<b> Fri, 10 Jan</b></p>
+                                      <p>Or fastest delivery<b> Tomorrow, 9 Jan</b></p>
+                                      <p>Ages: 2-10 years</p> 
+                                      <div class="featured-content-list">
+                                       <button type="button" data-name="MOM CARE Cotton Microfibre Bath Towels for Kids -Extra Soft/Quick Dry/Strong Water Absorbent/Bathing Towel" data-price="599" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+                                    </div> 
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-3 col-sm-3 part">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                       <div class="men-thumb-item text-center">
+                                         <img src="imgs/bathing/11.png" alt="" class="img-fluid">
+                                         <div class="men-cart-pro">
+                                           <div class="inner-men-cart-pro">
+                                            <a href="single.html" class="link-product-add-cart">Quick View</a>
+                                           </div>
+                                         </div>
+                                       </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                                 <button type="submit" class="wishlist">
+                                  <svg width="25" height="23" viewBox="0 0 18 16">
+                                     <path
+                                       d="M9.01163699,14.9053769 C8.72930024,14.7740736 8.41492611,14.6176996 8.07646224,14.4366167 C7.06926649,13.897753 6.06198912,13.2561336 5.12636931,12.5170512 C2.52930452,10.4655288 1.00308384,8.09476443 1.00000218,5.44184117 C0.997549066,2.99198843 2.92175104,1.01242822 5.28303025,1.01000225 C6.41066623,1.00972036 7.49184369,1.4629765 8.28270844,2.2678673 L8.99827421,2.9961237 L9.71152148,2.26559643 C10.4995294,1.45849728 11.5791258,1.0023831 12.7071151,1.00000055 L12.7060299,1.00000225 C15.0693815,0.997574983 16.9967334,2.97018759 17.0000037,5.421337 C17.0038592,8.07662382 15.4809572,10.4530151 12.8850542,12.5121483 C11.9520963,13.2521931 10.9477036,13.8951276 9.94340074,14.4354976 C9.60619585,14.6169323 9.29297309,14.7736855 9.01163699,14.9053769 Z" stroke="#ff0000" stroke-width="1"/>
+                                      </svg>
+                                </button><br>
+                                 <div class="content">
+                                    <h6><a href="single.html">StarAndDaisy Large Bath Tub With Foldable Bathtub for kids & Adults with Space Saving</a></h6>
+                                    <div class="content-in">
+                                       <span class="price">₹ 13,999.00 </span>
+                                       <del>₹ 24,999.00</del>
+                                    </div><div class="rating-heading">
+                                      <div class="rating-highlight">
+                                        <span>4&nbsp;<i class="fas fa-star"></i></span>
+                                       </div>
+                                        <p>&nbsp; (137)</p>
+                                      </div><br>
+                                      <div id="countdown">Limite time deal</div><br>
+                                      <p>FREE delivery<b> Fri, 10 Jan</b></p>
+                                      <p>Or fastest delivery<b> Tomorrow, 9 Jan</b></p>
+                                      <p>Ages: 2-10 years</p> 
+                                      <div class="featured-content-list">
+                                       <button type="button" data-name="StarAndDaisy Tiny Steps Baby Walker 2-in-1 Infant & Baby Activity Walker" data-price="2849" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+                                    </div> 
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-3 col-sm-3 part">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                       <div class="men-thumb-item text-center">
+                                         <img src="imgs/bathing/12.png" alt="" class="img-fluid">
+                                         <div class="men-cart-pro">
+                                           <div class="inner-men-cart-pro">
+                                            <a href="single.html" class="link-product-add-cart">Quick View</a>
+                                           </div>
+                                         </div>
+                                       </div>
+                                 </div>
+                                 <button type="submit" class="wishlist">
+                                  <svg width="25" height="23" viewBox="0 0 18 16">
+                                     <path
+                                       d="M9.01163699,14.9053769 C8.72930024,14.7740736 8.41492611,14.6176996 8.07646224,14.4366167 C7.06926649,13.897753 6.06198912,13.2561336 5.12636931,12.5170512 C2.52930452,10.4655288 1.00308384,8.09476443 1.00000218,5.44184117 C0.997549066,2.99198843 2.92175104,1.01242822 5.28303025,1.01000225 C6.41066623,1.00972036 7.49184369,1.4629765 8.28270844,2.2678673 L8.99827421,2.9961237 L9.71152148,2.26559643 C10.4995294,1.45849728 11.5791258,1.0023831 12.7071151,1.00000055 L12.7060299,1.00000225 C15.0693815,0.997574983 16.9967334,2.97018759 17.0000037,5.421337 C17.0038592,8.07662382 15.4809572,10.4530151 12.8850542,12.5121483 C11.9520963,13.2521931 10.9477036,13.8951276 9.94340074,14.4354976 C9.60619585,14.6169323 9.29297309,14.7736855 9.01163699,14.9053769 Z" stroke="#ff0000" stroke-width="1"/>
+                                      </svg>
+                                </button><br>
+                                 <div class="content">
+                                    <h6><a href="single.html">Baby Moo Bathing Essentials Premium Gift Hamper 11 Pcs Unisex Baby Girl Boy</a></h6>
+                                    <div class="content-in">
+                                       <span class="price">₹ 4,318.00 </span>
+                                       <del>₹ 6,249.00</del>
+                                    </div><div class="rating-heading">
+                                      <div class="rating-highlight">
+                                        <span>4&nbsp;<i class="fas fa-star"></i></span>
+                                       </div>
+                                        <p>&nbsp; (137)</p>
+                                      </div>
+                                      <p>FREE delivery<b> Fri, 10 Jan</b></p>
+                                      <p>Or fastest delivery<b> Tomorrow, 9 Jan</b></p>
+                                      <p>Ages: 2-10 years</p> 
+                                      <div class="featured-content-list">
+                                       <button type="button" data-name="Baby Moo Bathing Essentials Premium Gift Hamper 11 Pcs Unisex Baby Girl Boy" data-price="4318" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+                                    </div> 
+                                 </div>
+                              </div>
+                           </div>                                              
                         </div>
                      </div>
-
                      <p id="not_found"></p>
                   </div>
                </div>
             </div>
          </div>
+         <div class="pagination" id="pagination"> 
+    <a href="#" id="prev">Previous</a> 
+    <a href="#" class="page-link" data-page="1">1</a> 
+    <a href="#" class="page-link" data-page="2">2</a> 
+    <a href="#" id="next">Next</a> 
+    <p id="page-numbers"> </p> 
+  </div>
       </section>
     </main>
   </div>
+   
 </div>
-
-
       <!-- Modal -->
       <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
          aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -1740,6 +1813,7 @@ RIGHT SIDEBAR TOGGLE SECTION
             </thead>
             <tbody class="show-cart table"></tbody>
           </table>
+          <button class="clear-cart btn btn-danger">Clear Cart</button>
         </div>
         <hr class="hr">
         <div class="row">
@@ -2359,5 +2433,48 @@ RIGHT SIDEBAR TOGGLE SECTION
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8f1454952eb2719e',t:'MTczNDA3NTg4Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='../../../../../../cdn-cgi/challenge-platform/h/g/scripts/jsd/f9063374b04d/maind41d.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();
 </script>
 <script src="js/cart.js"></script>
+<script src="js/pagination.js"></script>
+<script>
+  $(function() {
+  $("button").on("click", function() {
+    $(this).toggleClass("is-active");
+  });
+});
+</script>
+<script>
+  (function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  //I'm adding this section so I don't have to keep updating this pen every year :-)
+  //remove this if you don't need it
+  let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy + 1,
+      dayMonth = "09/30/",
+      birthday = dayMonth + yyyy;
+ 
+  //end
+  
+  const countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
+
+        const now = new Date().getTime(),
+              distance = countDown - now;
+
+        /*document.getElementById("days").innerText = Math.floor(distance / (day)),*/
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        
+        //seconds
+      }, 0)
+  }());
+</script>
 </body>
 </html>
