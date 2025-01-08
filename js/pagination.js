@@ -7,8 +7,8 @@ const nextButton = document.getElementById('next');
 const pageNumbers = document.getElementById('page-numbers'); 
 const pageLinks = document.querySelectorAll('.page-link'); 
 
-const  parts = 
-	Array.from(dataContainer.getElementsByClassName(' part')); 
+const parts = 
+	Array.from(dataContainer.getElementsByClassName('part')); 
 
 // Calculate the total number of pages 
 const totalPages = Math.ceil(parts.length / partsPerPage); 
@@ -31,8 +31,8 @@ function displayPage(page) {
 function updatePagination() { 
 	pageNumbers.textContent = 
 		`Page ${currentPage} of ${totalPages}`; 
-	prevButton.disabled = currentPage === 1; 
-	nextButton.disabled = currentPage === totalPages; 
+	prevButton.enabled = currentPage === 1; 
+	nextButton.enabled = currentPage === totalPages; 
 	pageLinks.forEach((link) => { 
 		const page = parseInt(link.getAttribute('data-page')); 
 		link.classList.toggle('active', page === currentPage); 
