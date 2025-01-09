@@ -5320,14 +5320,20 @@ hr {
     border-left: none;
     padding: 5vh 0 1vh 0;
 }
+input:focus {
+    outline: none;
+    border: 1px solid #fbd03d;
+}
 .gift-card input:focus {
     border-bottom: 1px solid #fdb03d;
     outline: none;
 }
 .debit-credit {
-    padding: 16px;
+    padding: 20px;
     border-radius: 6px;
-    background: linear-gradient(62deg, #7e70e403, #5fc5da33);
+    /*background: linear-gradient(62deg, #7e70e403, #5fc5da33);*/
+    background: #fff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
 }
 .label {
     margin-left: 8px !important;
@@ -5930,6 +5936,7 @@ table {
     color: grey;
     float: right !important;
     padding-top: 5px;
+    margin-right: 23px;
 }
 .btn-shopping-style {
     color: #fff;
@@ -6130,5 +6137,11 @@ table {
     right: 22px;
     position: relative;
 }
+.top-most {
+    padding-bottom: 22px;
+}
 
  
+.space {
+    padding: 10px 0;
+}
