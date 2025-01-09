@@ -929,16 +929,16 @@ RIGHT SIDEBAR TOGGLE SECTION
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="agileits-navi_search">
           <form action="#" method="post">
-            <select id="agileinfo-nav_search" name="agileinfo_search" required="">
+            <select id="agileinfo-nav_search" name="agileinfo_search" required="" onchange="(this.options[this.selectedIndex].value?  window.open(this.options[this.selectedIndex].value,'_blank'):'')">
               <option value="">All Categories</option>
-              <option value="Televisions">Toys & Gaming</option>
-              <option value="Headphones">Boy Fashion</option>
-              <option value="Computers">Girl Fashion</option>
-              <option value="Appliances">Diaper & Rompers</option>
-              <option value="Mobiles">Footwear</option>
-              <option value="Fruits &amp; Vegetables">Gear</option>
-              <option value="iPad & Tablets">Bathing</option>
-              <option value="Cameras & Camcorders">Fashion Accessories</option>
+              <option value="toys and gaming.html">Toys & Gaming</option>
+              <option value="boys fashion.html">Boy Fashion</option>
+              <option value="girl fashion.html">Girl Fashion</option>
+              <option value="diapers & rompers.html">Diaper & Rompers</option>
+              <option value="footwear.html">Footwear</option>
+              <option value="gear.html">Gear</option>
+              <option value="bathing.html">Bathing</option>
+              <option value="fashion accessories.html">Fashion Accessories</option>
             </select>
           </form>
         </div>

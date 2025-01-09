@@ -1137,16 +1137,16 @@ if(typeof _bsa !== 'undefined' && _bsa) {
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="agileits-navi_search">
           <form action="#" method="post">
-            <select id="agileinfo-nav_search" name="agileinfo_search" required="">
+            <select id="agileinfo-nav_search" name="agileinfo_search" required="" onchange="(this.options[this.selectedIndex].value?  window.open(this.options[this.selectedIndex].value,'_blank'):'')">
               <option value="">All Categories</option>
-              <option value="Televisions">Toys & Gaming</option>
-              <option value="Headphones">Boy Fashion</option>
-              <option value="Computers">Girl Fashion</option>
-              <option value="Appliances">Diaper & Rompers</option>
-              <option value="Mobiles">Footwear</option>
-              <option value="Fruits &amp; Vegetables">Gear</option>
-              <option value="iPad & Tablets">Bathing</option>
-              <option value="Cameras & Camcorders">Fashion Accessories</option>
+              <option value="toys and gaming.html">Toys & Gaming</option>
+              <option value="boys fashion.html">Boy Fashion</option>
+              <option value="girl fashion.html">Girl Fashion</option>
+              <option value="diapers & rompers.html">Diaper & Rompers</option>
+              <option value="footwear.html">Footwear</option>
+              <option value="gear.html">Gear</option>
+              <option value="bathing.html">Bathing</option>
+              <option value="fashion accessories.html">Fashion Accessories</option>
             </select>
           </form>
         </div>
@@ -1381,8 +1381,7 @@ if(typeof _bsa !== 'undefined' && _bsa) {
               </tr>
             </thead>
             <tbody class="show-cart table"></tbody>
-          </table>
-          <button class="clear-cart btn btn-danger">Clear Cart</button>
+          </table>          
             <div class="grand-total">Total price: ₹<span class="total-cart"></span></div>
         </div>
       </div>
@@ -2130,39 +2129,33 @@ if(typeof _bsa !== 'undefined' && _bsa) {
               <table>
                 <tr>
                   <td>Value of Products</td>
-                  <td>:</td>
-                  <td>₹ 730</td>
+                  <td>: <span class="total-cart"></span></td>
                 </tr>
                 <tr style="color: #27A63F;">
                   <td>Discount(-)</td>
-                  <td>:</td>
-                  <td>₹ 90</td>
+                  <td>: ₹ 0</td>
                 </tr>
                 <tr>
                   <td>Estimated GST (+)</td>
-                  <td>:</td>
-                  <td>₹ 148</td>
+                  <td>: ₹ 0</td>
                 </tr>
                 <tr>
                   <td>Shipping (+)</td>
-                  <td>:</td>
-                  <td style="color: #27A63F;">FREE</td>
-                  <td><del>₹ 148</del></td>
+                  <td style="color: #27A63F;">: FREE</td>
+                  <td><del>₹ 40</del></td>
                 </tr>
                 <tr>
                   <td>Order Total</td>
-                  <td>:</td>
-                  <td>₹ 640</td>
+                  <td>: <span class="total-cart"></span></td>
                 </tr>
                 <tr>
                   <td>Net Payment</td>
-                  <td>:</td>
-                  <td>₹ 640</td>
+                  <td>: <span class="total-cart"></span></td>
                 </tr>
               </table>
             </div><br>
               <div id="main">
-                <button type="submit" class="debit-btn" onclick="openNav()">Place Order</button>
+                <button type="submit" class="debit-btn" onclick="openNav()"><b>PLACE ORDER</b></button>
               </div>
             </div>
           </div><br><hr>
@@ -2335,7 +2328,16 @@ if(typeof _bsa !== 'undefined' && _bsa) {
     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
       <div class="">
         <div class="card-body">
+
           <div class="debit-credit">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <img src="images/pay1.png">
+                <img src="images/pay2.png">
+                <img src="images/pay3.png">
+                <img src="images/pay6.png">
+              </div>
+            </div><br>
           <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
               <label class="label">Card Number *</label>
@@ -2358,7 +2360,7 @@ if(typeof _bsa !== 'undefined' && _bsa) {
               <span class="cod-options">Secure your card as per RBI guidelines</span>
             </div>
           </div>
-          <button class="debit-btn" type="submit">PAY NOW</button>
+          <a href="otp.html" style="padding: 0;font-size: 15px;"><button class="debit-btn" type="submit"><b>PAY NOW</b></button></a>
           </div>
         </div>
       </div>
@@ -2418,7 +2420,7 @@ if(typeof _bsa !== 'undefined' && _bsa) {
           </div><br>
           <center><p>Please provide valid UPI handle i.e (Virtual Payment Address)</p>
           <input type="text" class="debit-card" name="" placeholder="EX-mobileno@ybl or userid@okhdfc"></center>
-          <button type="button" class="debit-btn">Make a Payment</button>
+          <button type="button" class="debit-btn">PAY NOW</button>
           </div>
         </div>
       </div>
@@ -2497,7 +2499,7 @@ if(typeof _bsa !== 'undefined' && _bsa) {
                       <option value="VJB-NA">Vijaya Bank NetBanking</option>
                     </select>
                   </div><br>
-                  <button type="submit" class="debit-btn">Make a Payment</button>
+                  <button type="submit" class="debit-btn">PAY NOW</button>
                 </div>
               </div>
       </div>
@@ -2561,7 +2563,7 @@ if(typeof _bsa !== 'undefined' && _bsa) {
               <input type="submit" id="captcha-btn" onclick="printmsg()" />
               <p id="key"></p><br>
             <!-- end of captcha -->  
-            <button type="button" class="debit-btn" data-toggle="modal" data-target="#thankyou">Proceed with COD</button> 
+            <button type="button" class="debit-btn" data-toggle="modal" data-target="#thankyou">PAY NOW</button> 
           </div>
         </div>
       </div>
@@ -2780,11 +2782,13 @@ if(typeof _bsa !== 'undefined' && _bsa) {
             </thead>
             <tbody class="show-cart table"></tbody>
           </table>
+          <button class="clear-cart btn btn-danger">Clear Cart</button>
         </div>
         <hr class="hr">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
-            <div class="grand-total">Grand Total: ₹<span class="total-cart"></span></div>
+            <div class="grand-total">Grand Total: ₹<span class="total-cart"></span>
+            </div>
           </div>
         </div><br>
                   <div class="row">
@@ -3123,7 +3127,6 @@ function printmsg() {
     </script>
 <!-- end of captcha -->
 
-<script src="js/cart.js"></script>
 <script src="js/cart.js"></script>
 </body>
 </html>
