@@ -1,5 +1,5 @@
 //script.js 
-const partsPerPage = 12; // Number of parts to show per page 
+const partsPerPage = 10; // Number of parts to show per page 
 const dataContainer = document.getElementById('data-container'); 
 const pagination = document.getElementById('pagination'); 
 const prevButton = document.getElementById('prev'); 

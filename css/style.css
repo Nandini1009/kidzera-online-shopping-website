@@ -5340,6 +5340,7 @@ input:focus {
 }
  button:focus {
     outline: none !important;
+    box-shadow: none;
 }
 .btnn {
     background: #292560;
@@ -6144,4 +6145,104 @@ table {
  
 .space {
     padding: 10px 0;
+}
+.btn:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.button3 {
+    background: #fff;
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+    text-decoration-color: #2874f0;
+}
+.button4 {
+    background: #fff;
+    border: none;
+    padding: 0;
+    
+}
+.geo-img {
+    width: 40px;
+}
+.login-img {
+            width: 100%;
+            padding: 90% 0 0;
+            /*margin: 0 20px;*/
+        }
+        .login-btn {
+            background: #18456f;
+            color: #fff;
+            font-weight: 700;
+            width: -webkit-fill-available;
+        }
+        .login-btn:hover {
+            color: #fff;
+            background: #fbd03d;
+        }
+        .login-box {
+            background: #18456f;
+            color: #fff;
+            /*padding: 10%;*/
+        }
+        .login-box h4 {
+            font-weight: 700;
+            color: #fff;
+        }
+        .login-box p {
+            font-weight: 500;
+            font-size: 14px;
+            padding-top: 35px;
+            color: #fff;
+        }
+        .login-content {
+            padding: 20% 10%;
+        }
+#exampleModal .modal-content {
+    border: none !important;
+    /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);*/
+}
+#exampleModal2 .modal-content {
+    border: none !important;
+    /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);*/
+}
+#exampleModal .card-body {
+    border: none !important;
+    padding: 0;
+    /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);*/
+}
+#exampleModal2 .card-body {
+    border: none !important;
+    padding: 0;
+    /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);*/
+}
+.login-field {
+    /*padding: 10%;*/
+    margin-right: 30px;
+    padding: 90px 0;
+}
+.login-field span {
+    font-size: 12px;
+}
+.login-field a{
+    color: #2874f0;
+}
+.new {
+    bottom: 0;
+    position: absolute;
+    font-weight: bold;
+    font-size: 15px !important;
+    padding: 28px;
+}
+.new2 {
+    bottom: 0;
+    position: absolute;
+    font-weight: bold;
+    font-size: 15px !important;
+    padding: 0 0 28px 70px;
+}
+.close {
+    padding: 12px !important;
 }
